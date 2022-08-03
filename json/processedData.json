@@ -1,0 +1,31 @@
+{
+    "Acer R751T/R751TN": {
+        "models": {
+            "AutotaskModel 1": ""
+        },
+        "751T LCD": "Acer R751T Touchscreen LCD",
+        "751TN LCD": "Acer R751TN Touchscreen LCD",
+        "751T LCD Cable": "Acer R751T LCD Cable",
+        "751TN LCD Cable": "Acer R751TN LCD Cable",
+        "MB": "Acer R751T/R751TN Motherboard",
+        "Thermal Module": "N/A",
+        "Wireless Card": "Acer C731/C731T/C732/R751T/R751TN/C771",
+        "Wireless Antennas": "Acer R751T/R751TN Wireless Antenna",
+        "Battery": "Acer R751T/R751TN Battery",
+        "Accessory Board #1": "Acer R751T/R751TN G Sensor Board & Cable",
+        "Accessory Board #2": "Acer R751T/R751TN USB Board",
+        "Webcam": "Acer C732/C732T/C771/C771T/R751T ....",
+        "Camera Holder": "Acer R751T/R751TN Camera Holder Sub Assembly",
+        "Microphone": "Acer R751T/R751TN/R13 Microphone",
+        "Top Cover": "Acer R751T/R751TN Back LCD Cover",
+        "Base Cover": "Acer R751T/R751TN Base Enclosure",
+        "Keyboard": "Acer R751T/R751TN Keyboard & Palmrest",
+        "Touchpad": "Acer R751T/R751TN Touchpad",
+        "Touchpad Cable": "Acer R751T/R751TN Touchpad Cable",
+        "Left Hinge": "Acer R751T/R751TN Hinge, Bracket & Cap - Left",
+        "Right Hinge": "Acer R751T/R751TN Hinge, Bracket & Cap - Right",
+        "Speakers": "Acer R751T/R751TN Speakers",
+        "Stylus": "Acer R751TN Stylus",
+        "Base Support": "N/A"
+    }
+}

@@ -1,0 +1,564 @@
+{
+
+    "Acer C722": {
+        "models":[
+            "Acer C722-K4CN MTK8183 - 4GB/32GB"    
+        ],
+        "LCD": "Acer C720/Dell 11/Lenovo 11e/HP 11-G3/Lenovo N21/Samsung V2/Dell SS",
+        "LCD Cable": "Acer C722 LCD Cable",
+        "MB":{
+            "Acer C722-K4CN MTK8183 - 4GB/32GB":"Acer C722 Motherboard MTK8183 - 4GB/32GB"
+        },
+        "Wireless Antennas": "Acer C722 Antenna",
+        "Battery": "Purchase - Acer C722/C871/C871T/C922T/C933/C933T/CB315 Battery",
+        "Daughter Board Bracket": "Acer C722 USB Board Bracket",
+        "Daughter Board": "Acer C722 USB Board",
+        "Daughter Board Cable": "Acer C722 USB Board Cable",
+        "Webcam": "Acer C722 Webcam",
+        "Top Cover": "Acer C722 Back LCD Cover",
+        "Bezel": "Acer C722 LCD Bezel",
+        "Bottom Cover": "Acer C722 Bottom Cover",
+        "Palmrest": "Acer C722 Palmrest",
+        "Keyboard": "Acer C722 Keyboard",
+        "Touchpad": "Acer C722/R753T Touchpad",
+        "Touchpad Cable": "Acer C722 Touchpad Cable",
+        "Left Hinge": "Acer C722 Hinge - Left",
+        "Right Hinge": "Acer C722 Hinge - Right",
+        "Speakers": "Acer C722 Speakers"
+    },
+
+
+    "Acer C732": {
+        "models":[
+            "Acer C732 Chromebook",
+            "Acer C732T Chromebook"     
+        ],
+        "LCD": "Acer C720/Dell 11/Lenovo 11e/HP 11-G3/Lenovo N21/Samsung V2/Dell SS",
+        "Touch LCD": "Acer C732T/C733T/Asus C213SA/214MA/Dell 3100 Touch/HP 11a G6 EE/11 G8 EE Touchscreen LCD",
+        "LCD Cable": "Acer C732/C733 LCD Cable",
+        "Touch LCD Cable": "Acer C732T/C733T LCD Cable",
+        "MB":{
+            "Acer C732 Chromebook":"Acer C732 Motherboard",
+            "Acer C732T Chromebook":"Acer C732T Motherboard"
+        },
+        "Wireless Card": "Acer C731/C731T/C732/R751T/R751TN/C771/CB3-431/CB514 Wireless Card",
+        "Wireless Antennas": "Acer C732/C732T/C733/C733T Antenna",
+        "Battery": "Purchase - Acer C732/C732T/C733/C851T/R851TN/CB514 Battery",
+        "Daughter Board": "Acer C732/C732T USB Board",
+        "Daughter Board Cable": "Acer C732/C732T/C733/C733T USB Ribbon Cable",
+        "Webcam": "Acer C732/C732T/C771/C771T/CB3-431/R751T/R751TN/R13 Webcam",
+        "Microphone": "Acer C732/C732T/C733/C733T Microphone",
+        "Top Cover": "Acer C732/C732T Back LCD Cover",
+        "Bezel": "Acer C732/C732T/C733/C733T LCD Bezel",
+        "Base Cover": "Acer C732/C732T/C733/C733T Bottom Cover",
+        "Keyboard": "Acer C732/C732T/C733/C733T Keyboard & Palmrest",
+        "Touchpad": "Acer C732/C732T/C733/C733T Touchpad",
+        "Touchpad Cable": "Acer C732/C732T/C733/C733T Touchpad Cable",
+        "Left Hinge": "Acer C732/C732T/C733/C733T Hinge - Left",
+        "Right Hinge": "Acer C732/C732T/C733/C733T Hinge - Right",
+        "Speakers": "Acer C732/C732T Speakers"
+    },
+
+    "Acer C733": {
+        "models":[
+            "Acer C733-C5AS N4020 - 4GB/32GB",
+            "Acer C733-C37P N4000 - 4GB/32GB"     
+        ],
+        "LCD": "Acer C720/Dell 11/Lenovo 11e/HP 11-G3/Lenovo N21/Samsung V2/Dell SS",
+        "Touch LCD": "Acer C732T/C733T/Asus C213SA/214MA/Dell 3100 Touch/HP 11a G6 EE/11 G8 EE Touchscreen LCD",
+        "LCD Cable": "Acer C732/C733 LCD Cable",
+        "Touch LCD Cable": "Acer C732T/C733T LCD Cable",
+        "MB":{
+            "Acer C733-C5AS N4020 - 4GB/32GB":"Acer C733 Motherboard N4020 - 4GB/32GB",
+            "Acer C733-C37P N4000 - 4GB/32GB":"Acer C733 Motherboard N4000 - 4GB/32GB"
+        },
+        "Wireless Card": "Acer C733/R752T/R752TN/R851TN/C851T/C933/C933T/CB315 Wireless Card",
+        "Wireless Antennas": "Acer C732/C732T/C733/C733T Antenna",
+        "Battery": "Purchase - Acer C732/C732T/C733/C851T/R851TN/CB514 Battery",
+        "Daughter Board": "Acer C733/C733T/C851T USB Board w/G Sensor",
+        "Daughter Board Cable": "Acer C733/C733T USB Cable",
+        "Webcam": "Acer C721/C733/C851T/R721T/R752T/R851T Webcam",
+        "Microphone": "Acer C732/C732T/C733/C733T Microphone",
+        "Top Cover": "Acer C732/C732T Back LCD Cover",
+        "Bezel": "Acer C732/C732T/C733/C733T LCD Bezel",
+        "Base Cover": "Acer C732/C732T/C733/C733T Bottom Cover",
+        "Keyboard": "Acer C732/C732T/C733/C733T Keyboard & Palmrest",
+        "Touchpad": "Acer C732/C732T/C733/C733T Touchpad",
+        "Touchpad Cable": "Acer C732/C732T/C733/C733T Touchpad Cable",
+        "Left Hinge": "Acer C732/C732T/C733/C733T Hinge - Left",
+        "Right Hinge": "Acer C732/C732T/C733/C733T Hinge - Right",
+        "Speakers": "Acer C733 Speakers"
+    },
+
+    "Acer R751T/R751TN": {
+        "models": [
+            "Acer Spin R751T-C4XP Chromebook",
+            "Acer R751TN Chromebook"
+        ],
+        "751T LCD": "Acer R751T Touchscreen LCD",
+        "751TN LCD": "Acer R751TN Touchscreen LCD",
+        "751T LCD Cable": "Acer R751T LCD Cable",
+        "751TN LCD Cable": "Acer R751TN LCD Cable",
+        "MB":{
+            "Acer Spin R751T-C4XP Chromebook":"Acer R751T/R751TN Motherboard",
+            "Acer R751TN Chromebook":"Acer R751T/R751TN Motherboard"
+        },
+        "Wireless Card": "Acer C731/C731T/C732/R751T/R751TN/C771/CB3-431/CB514 Wireless Card",
+        "Wireless Antennas": "Acer R751T/R751TN Wireless Antenna",
+        "Battery": "Purchase - Acer R751T/R751TN Battery",
+        "G Sensor Board / Cable": "Acer R751T/R751TN G Sensor Board & Cable",
+        "Daughter Board": "Acer R751T/R751TN USB Board",
+        "Webcam": "Acer C732/C732T/C771/C771T/CB3-431/R751T/R751TN/R13 Webcam",
+        "Camera Holder": "Acer R751T/R751TN Camera Holder Sub Assembly",
+        "Microphone": "Acer R751T/R751TN/R13 Microphone",
+        "Top Cover": "Acer R751T/R751TN Back LCD Cover",
+        "Base Cover": "Acer R751T/R751TN Base Enclosure",
+        "Keyboard": "Acer R751T/R751TN Keyboard & Palmrest",
+        "Touchpad": "Acer R751T/R751TN Touchpad",
+        "Touchpad Cable": "Acer R751T/R751TN Touchpad Cable",
+        "Left Hinge": "Acer R751T/R751TN Hinge, Bracket & Cap - Left",
+        "Right Hinge": "Acer R751T/R751TN Hinge, Bracket & Cap - Right",
+        "Speakers": "Acer R751T/R751TN Speakers"
+    },
+
+    "Acer R752T/TN": {
+        "models": [
+            "Acer R752T Chromebook",
+            "Acer R752T-C2YP N4020 - 4GB/32GB - No Stylus - Single Camera",
+            "Acer R752T-C3M5 N4020 - 4GB/32GB - No Stylus",
+            "Acer R752TN-C2J5 N4000 - 4GB/32GB - Stylus",
+            "Acer R752TN-C5J5 N4020 - 4GB/32GB - Stylus - Dual Camera"
+        ]
+        ,
+        "Touch LCD": "Acer R752T Touchscreen LCD",
+        "Touch LCD (stylus": "Acer R752TN Touchscreen LCD",
+        "LCD Cable": "Acer R752T LCD Cable",
+        "LCD Cable (stylus)": "Acer R752TN LCD Cable",
+        "MB":{
+            "Acer R752T Chromebook":"Acer R752T Motherboard N4000 - 4GB/32GB - No Stylus",
+            "Acer R752T-C2YP N4020 - 4GB/32GB - No Stylus - Single Camera":"Acer R752T Motherboard N4020 - 4GB/32GB - No Stylus - Single Camera",
+            "Acer R752T-C3M5 N4020 - 4GB/32GB - No Stylus":"Acer R752T Motherboard N4020 - 4GB/32GB - No Stylus - Dual Camera",
+            "Acer R752TN-C2J5 N4000 - 4GB/32GB - Stylus":"Acer R752TN Motherboard N4000 - 4GB/32GB - Stylus",
+            "Acer R752TN-C5J5 N4020 - 4GB/32GB - Stylus - Dual Camera":"Acer R752TN Motherboard N4020 - 4GB/32GB - Stylus - Dual Camera - nSDR"
+        },
+        "Wireless Card": "Acer C733/R752T/R752TN/R851TN/C851T/C933/C933T/CB315 Wireless Card",
+        "Wireless Antennas": "Acer R752T/R752TN Wifi Antennae",
+        "Battery": "Purchase - Acer R752T Battery",
+        "Daughter Board - 752T": "Acer R752T USB Board",
+        "Daughter Board - 752TN": "Acer R752TN USB Board",
+        "G Sensor Cable": "Acer R752T/R752TN G Sensor Board Cable",
+        "Webcam": "Acer C721/C733/C851T/R721T/R752T/R851T Webcam",
+        "Webcam Cable": "Acer R752T/R752TN Camera Cable",
+        "Microphone": "Acer C721/R721T/R752T/R752TN/R851TN Microphone",
+        "Top Cover": "Acer R752T/R752TN Back LCD Cover",
+        "Base Cover": "Acer R752T Base Enclosure",
+        "Base cover (stylus)": "Acer R752TN Base Enclosure",
+        "Keyboard": "Acer R752T/R752TN Keyboard & Palmrest",
+        "Keyboard Camera": "Acer R752T/R752TN Keyboard Camera",
+        "Touchpad": "Acer R752T/R752TN Touchpad",
+        "Touchpad Cable": "Acer R752T/R752TN Touchpad Cable",
+        "Left Hinge": "Acer R752T/R752TN Hinge - Left",
+        "Right Hinge": "Acer R752T/R752TN Hinge - Right",
+        "Speakers": "Acer R752T/R752TN Speakers"
+    },
+
+    "Dell 3100/3100 Touch": {
+        "models": [
+            "Dell 3100 Chromebook - 4GB/32GB - 2 USB Port",
+            "Dell 3100 Chromebook N4000 - 4GB/16GB - 1 USB Port",
+            "Dell 3100 Chromebook N4000 - 4GB/16GB - 2 USB Port",
+            "Dell 3100 N4020 - 4GB/16GB - 1 USB Port",
+            "Dell 3100 N4020 - 4GB/32GB - 2 USB Port",
+            "Dell 3100 N4020 - 4GB/32GB - 2 USB Port - Touch"
+        ],
+
+        "LCD": "Acer C720/Dell 11/Lenovo 11e/HP 11-G3/Lenovo N21/Samsung V2/Dell SS",
+        "Touch LCD": "Acer C732T/C733T/Asus C213SA/214MA/Dell 3100 Touch/HP 11a G6 EE/11 G8 EE Touchscreen LCD",
+        "LCD Cable": "Dell 3100 LCD Cable", 
+        "MB":{
+            "Dell 3100 Chromebook - 4GB/32GB - 2 USB Port":"Dell 3100/3100 Touch Motherboard N4000 - 4GB/32GB - 2 USB Port",
+            "Dell 3100 Chromebook N4000 - 4GB/16GB - 1 USB Port":"Dell 3100 Motherboard",
+            "Dell 3100 Chromebook N4000 - 4GB/16GB - 2 USB Port":"Dell 3100 Motherboard N4000 - 4GB/16GB - 2 USB Port",
+            "Dell 3100 N4020 - 4GB/16GB - 1 USB Port":"Dell 3100 Motherboard N4020 - 4GB/16GB - 1 USB Port",
+            "Dell 3100 N4020 - 4GB/32GB - 2 USB Port":"Dell 3100/3100 Touch Motherboard N4020 - 4GB/32GB - 2 USB Port",
+            "Dell 3100 N4020 - 4GB/32GB - 2 USB Port - Touch":"Dell 3100/3100 Touch Motherboard N4020 - 4GB/32GB - 2 USB Port"
+        },
+        "Battery": "Purchase - Dell 3100/3100 2-in-1 Battery",
+        "Accessory Board": "Dell 3100 IO Board",
+        "Accessory Cable": "",
+        "Webcam": "Dell 3100 Webcam",
+        "Top Cover": "Dell 3100 Back LCD Cover",
+        "Bezel": "Dell 3100 LCD Bezel",
+        "Base Cover": "Dell 3100 Bottom Cover",
+        "Keyboard": "Dell 3100/5190 Keyboard",
+        "Palmrest (1 USB)": "Dell 3100 Palmrest",
+        "Palmrest (2 USB)": "Dell 3100 Palmrest - 2 USB",
+        "Touchpad": "Dell 3100/3100 2-in-1/5190 Touchpad",
+        "Touchpad Cable": "Dell 3100/3100 2-in-1/5190 Touchpad Cable",
+        "Left Hinge": "Dell 3100 Hinge - Left",
+        "Right Hinge": "Dell 3100 Hinge - Right",
+        "Speakers": "Dell 3100/3100 2-in-1 Speakers"
+    },
+
+    "Dell 3100 2-in-1": {
+        "models": [
+            "Dell 3100 N4000 2-in-1 - 4GB/32GB - Single Camera",
+            "Dell 3100 N4000 2-in-1 - 4GB/32GB - Dual Camera",
+            "Dell 3100 N4020 2-in-1 - 4GB/32GB - Single Camera",
+            "Dell 3100 N4020 2-in-1 - 4GB/32GB - Dual Camera"
+            
+        ],
+        "Touch LCD": "Dell 3100 Touchscreen LCD N4000/N4020 2-in-1",
+        "LCD Cable": "Dell 3100 LCD Cable 2-in-1",
+        "MB":{
+            "Dell 3100 N4000 2-in-1 - 4GB/32GB - Single Camera":"Dell 3100 2-in-1 Motherboard N4020 - 4GB/32GB - Single Camera",
+            "Dell 3100 N4000 2-in-1 - 4GB/32GB - Dual Camera":"Dell 3100 2-in-1 Motherboard N4000 - 4GB/32GB - Dual Camera",
+            "Dell 3100 N4020 2-in-1 - 4GB/32GB - Single Camera":"Dell 3100 2-in-1 Motherboard N4020 - 4GB/32GB - Single Camera",
+            "Dell 3100 N4020 2-in-1 - 4GB/32GB - Dual Camera":"Dell 3100 2-in-1 Motherboard N4020 - 4GB/32GB - Dual Camera"
+        },
+        "Battery": "Purchase - Dell 3100/3100 2-in-1 Battery",
+        "Accessory Board": "Dell 3100 IO Board 2-in-1",
+        "Webcam": "Dell 3100 Webcam 2-in-1",
+        "Keyboard Webcam": "Dell 3100 Keyboard Camera 2-in-1",
+        "Top Cover": "Dell 3100 Back LCD Cover 2-in-1",
+        "Base Cover": "Dell 3100 2-in-1 Bottom Cover",
+        "Keyboard": "Dell 3100 Keyboard 2-in-1 N4000/N4020",
+        "Palmrest (dual cam)": "Dell 3100 Palmrest 2-in-1 - Dual Camera",
+        "Palmrest (single cam)": "Dell 3100 Palmrest 2-in-1 - Single Camera",
+        "Touchpad": "Dell 3100/3100 2-in-1/5190 Touchpad",
+        "Touchpad Cable": "Dell 3100/3100 2-in-1/5190 Touchpad Cable",
+        "Left Hinge": "Dell 3100 Hinge - Left 2-in-1",
+        "Right Hinge": "Dell 3100 Hinge - Right 2-in-1",
+        "Speakers": "Dell 3100/3100 2-in-1 Speakers"
+    },
+    
+
+
+
+
+
+
+    "HP 11 G6 EE": {
+        "models":[
+            "HP Chromebook 11 G6 EE 4GB/16GB",
+            "HP Chromebook 11 G6 EE 4GB/32GB"
+        ],
+        "LCD": "Acer C732T/C733T/Asus C213SA/214MA/Dell 3100 Touch/HP 11a G6 EE/11 G8 EE Touchscreen LCD",
+        "LCD Cable": "HP 11 G6 EE/11a G6 EE LCD Cable",
+        "MB":{
+            "HP Chromebook 11 G6 EE 4GB/16GB":"HP 11 G6 EE Motherboard 4GB/16GB",
+            "HP Chromebook 11 G6 EE 4GB/32GB":"HP 11 G6 EE/11a NB0013DX Motherboard N3350 - 4GB/32GB"
+        },
+        "Thermal Module": "HP 11 G6 EE/14 G5/X360 11 G1 EE Heatsink",
+        "Wireless Card": "HP 11 G5/11 G5 EE/11 G6 EE/13 G1/14 G5/11a NB0013DX N3350",
+        "Wireless Antennas": "HP 11 G6 EE/11a NB0013DX N3350 Wifi Cables",
+        "Battery": "Purchase - HP 11 G6 EE/11a NB0013DX N3350/14 G5/x360 11 G1 EE Battery",
+        "Accessory Board": "HP 11 G6 EE/11a NB0013DX N3350 USB Board",
+        "Accessory Cable #1": "HP 11 G6 EE USB Board Cable",
+        "Webcam": "HP 11 G6 EE/14 G5 Webcam",
+        "Webcam Cable": "HP 11 G6 EE/11a G6 EE Webcam Cable",
+        "Top Cover": "HP 11 G6 EE/11a G6 EE Back LCD Cover",
+        "Bezel": "HP 11 G6 EE/11a G6 EE LCD Bezel",
+        "Base Enclosure": "HP 11 G6 EE Base Enclosure",
+        "Keyboard": "HP 11 G6 EE Keyboard & Palmrest",
+        "Mylar": "HP 11 G6 EE/ 11a G6 EE Keyboard Mylar",
+        "Touchpad": "HP 11 G6 EE Touchpad",
+        "Touchpad Cable": "HP 11 G6 EE/11a G6 EE/11 G7 EE/HP x360 G1/G2/G3 Touchpad Cable",
+        "Left Hinge": "HP 11 G6 EE/11a G6 EE Hinge - Left",
+        "Right Hinge": "HP 11 G6 EE/11a G6 EE Hinge - Right",
+        "LCD Bracket": "HP 11 G6 EE/ 11a G6 EE LCD Bracket",
+        "Speakers": "HP 11 G6 EE/11a G6 EE/11a NB0013DX N3350 Speakers"
+    },
+
+    "HP 11a G6 EE": {
+        "models":[
+            "HP Chromebook 11a G6 EE 4GB/16GB",
+            "HP Chromebook 11a G6 EE 4GB/32GB - Touch",
+            "HP Chromebook 11a G6 EE 4GB/32GB"
+        ],
+        "LCD": "Acer C720/Dell 11/Lenovo 11e/HP 11-G3/Lenovo N21/Samsung V2/Dell SS",
+        "Touch LCD": "Acer C732T/C733T/Asus C213SA/214MA/Dell 3100 Touch/HP 11a G6 EE/11 G8 EE Touchscreen LCD",
+        "LCD Cable": "HP 11 G6 EE/11a G6 EE LCD Cable",
+        "Touch LCD Cable": "HP 11a G6 EE LCD Cable - Touch",
+        "MB":{
+            "HP Chromebook 11a G6 EE 4GB/16GB":"HP 11a G6 EE Motherboard 4GB/16GB",
+            "HP Chromebook 11a G6 EE 4GB/32GB":"HP 11a G6 EE Motherboard 4GB/32GB",
+            "HP Chromebook 11a G6 EE 4GB/32GB - Touch":"HP 11a G6 EE Motherboard 4GB/32GB"
+        },
+        "Wireless Card": "HP 11a G6 EE/11a G8 EE/14a G5 Wifi Card",
+        "Wireless Antennas": "HP 11a G6 EE/11a NB0013DX Antennae",
+        "Battery": "Purchase - HP 11a G6 EE/11 G7 EE/x360 11 G2 EE Battery",
+        "Accessory Board": "HP 11a G6 EE USB Board",
+        "Webcam": "HP 11a G6 EE/11 G8 EE/11a G8 EE Webcam",
+        "Webcam Cable": "HP 11 G6 EE/11a G6 EE Webcam Cable",
+        "Top Cover": "HP 11 G6 EE/11a G6 EE Back LCD Cover",
+        "Bezel": "HP 11 G6 EE/11a G6 EE LCD Bezel",
+        "Base Enclosure": "HP 11a G6 EE Base Enclosure",
+        "Keyboard": "HP 11a G6 EE Keyboard & Palmrest",
+        "Mylar": "HP 11 G6 EE/ 11a G6 EE Keyboard Mylar",
+        "Touchpad": "HP 11a G6 EE/11a G8 EE Touchpad",
+        "Touchpad Cable": "HP 11 G6 EE/11a G6 EE/11 G7 EE/HP x360 G1/G2/G3 Touchpad Cable",
+        "Left Hinge": "HP 11 G6 EE/11a G6 EE Hinge - Left",
+        "Right Hinge": "HP 11 G6 EE/11a G6 EE Hinge - Right",
+        "LCD Bracket": "HP 11 G6 EE/ 11a G6 EE LCD Bracket",
+        "Speakers": "HP 11 G6 EE/11a G6 EE/11a NB0013DX N3350 Speakers",
+        "Thermal Module": "HP 11a G6 EE/14a G5 Heatsink"
+        
+    },
+    
+    "HP 11 G7 EE": {
+        "models":[
+            "HP Chromebook 11 G7 EE 4GB/16GB"     
+        ],
+        "LCD": "Acer C720/Dell 11/Lenovo 11e/HP 11-G3/Lenovo N21/Samsung V2/Dell SS",
+        "LCD Cable": "HP 11 G7 EE LCD Cable",
+        "MB":{
+            "HP Chromebook 11 G7 EE 4GB/16GB":"HP 11 G7 EE Motherboard 4GB/16GB",
+            "HP Chromebook 11 G7 EE 4GB/32GB":"HP 11 G7 EE Motherboard 4GB/32GB"
+        },
+        "Wireless Card": "HP 11 G7 EE/11 G8 EE/x360 11 G2 EE/14 G6 Wifi Card",
+        "Battery": "Purchase - HP 11a G6 EE/11 G7 EE/x360 11 G2 EE Battery",
+        "Daughter Board": "HP 11 G7 EE/11 G8 EE USB Board",
+        "Daughter Board Cable": "HP 11 G7 EE I/O Board Cable",
+        "Webcam": "HP 11 G7 EE Webcam",
+        "Webcam Cable": "HP 11 G7 EE Webcam Cable",
+        "Top Cover": "HP 11 G7 EE Back LCD Cover",
+        "Bezel": "HP 11 G7 EE LCD Bezel",
+        "Base Cover": "HP 11 G7 EE Base Enclosure",
+        "Keyboard": "HP 11 G7 EE Keyboard & Palmrest",
+        "Touchpad": "HP 11 G7 EE Touchpad",
+        "Touchpad Cable": "HP 11 G6 EE/11a G6 EE/11 G7 EE/HP x360 G1/G2/G3 Touchpad Cable",
+        "Left Hinge": "HP 11 G7 EE Hinge - Left",
+        "Right Hinge": "HP 11 G7 EE Hinge - Right",
+        "Speakers": "HP 11 G7 EE Speakers"
+    },
+    
+    "HP 11 G8 EE": {
+        "models":[
+            "HP 11a G8 EE A4 - 4GB/16GB",
+            "HP 11a G8 EE A4 - 4GB/32GB",
+            "HP 11 G8 EE N4000 - 4GB/32GB",
+            "HP 11 G8 EE N4020 - 4GB/32GB",
+            "HP 11 G8 EE N4020 - 4GB/32GB - Touch"
+        ],
+        "LCD": "Acer C720/Dell 11/Lenovo 11e/HP 11-G3/Lenovo N21/Samsung V2/Dell SS",
+        "Touch LCD": "Acer C732T/C733T/Asus C213SA/...",
+        "LCD Cable": "HP 11 G8 EE/11a G8 EE LCD Cable",
+        "LCD Cable (touch": "HP 11 G8 EE/11a G8 EE LCD Cable",
+        "MB":{
+            "HP 11a G8 EE A4 - 4GB/16GB":"HP 11a G8 EE Motherboard A4 - 4GB/16GB",
+            "HP 11a G8 EE A4 - 4GB/32GB":"HP 11a G8 EE Motherboard A4 - 4GB/32GB",
+            "HP 11 G8 EE N4000 - 4GB/32GB":"HP 11 G8 EE Motherboard N4000 - 4GB/32GB",
+            "HP 11 G8 EE N4020 - 4GB/32GB":"HP 11 G8 EE Motherboard N4020 - 4GB/32GB",
+            "HP 11 G8 EE N4020 - 4GB/32GB - Touch":"HP 11 G8 EE Motherboard N4020 - 4GB/32GB"
+        },
+        "Wireless Card": "HP 11 G7 EE/11 G8 EE/x360 11 G2 EE/14 G6 Wifi Card",
+        "Battery": "Purchase - HP 11 G8/11a G8 EE/14 G6/14A G5 NA0010NR/HP 11MK G9/X360 11 G3 EE Battery",
+        "Daughter Board": "HP 11 G7 EE/11 G8 EE USB Board",
+        "Daughter Board Cable": "HP 11 G8 EE/11a G8 EE USB Board Cable",
+        "Webcam": "HP 11a G6 EE/11 G8 EE/11a G8 EE Webcam",
+        "Webcam Cable": "HP 11 G8 EE/11a G8 EE Webcam Cable",
+        "Top Cover": "HP 11 G8 EE/11a G8 EE Back LCD Cover",
+        "Bezel": "HP 11 G8 EE/11a G8 EE/HP 11MK G9 EE LCD Bezel",
+        "Hinge Cover": "HP 11 G8 EE/11a G8 EE Hinge Cover",
+        "Base Cover": "HP 11 G8 EE Base Enclosure",
+        "Keyboard": "HP 11 G8 EE Keyboard & Palmrest",
+        "Touchpad": "HP 11 G8 EE/X360 11 G3 EE Touchpad",
+        "Touchpad Cable": "HP 11 G8 EE/11a G8 EE Touchpad Cable",
+        "Left Hinge": "HP 11 G8 EE/11a G8 EE Hinge - Left",
+        "Right Hinge": "HP 11 G8 EE/11a G8 EE Hinge - Right",
+        "Speakers": "HP 11 G8 EE/11a G8 EE Speakers"
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    "Lenovo 100E G2 - AMD": {
+        "models":[
+            "Lenovo 100e Gen 2 A4"      
+        ],
+        "LCD": "Acer C720/Dell 11/Lenovo 11e/HP 11-G3/Lenovo N21/Samsung V2/Dell SS",
+        "LCD Cable": "Lenovo 100e Gen 2 LCD Cable A4/N4020",
+        "MB":{
+            "Lenovo 100e Gen 2 A4":"Lenovo 100e Gen 2 Motherboard A4"
+        },
+        "MB Kit": "Lenovo 100e Gen 2 A4 Mylar & Rubber",
+        "Wireless Card": "Lenovo 100e Gen 2/300e Gen 2/500e Gen 2/C340-11 Wireless Card - Intel",
+        "Battery": "Lenovo 100e Gen 2/300e Gen 2 Battery A4",
+        "Accessory Board": "Lenovo 100e Gen 2 A4 USB Board",
+        "Webcam": "Lenovo 100e Gen 2 A4/100e Gen 2 N4020 Webcam",
+        "Top Cover": "Lenovo 100e Gen 2 Back LCD Cover A4/N4020",
+        "Bezel": "Lenovo 100e Gen 2 LCD Bezel",
+        "Base Cover": "Lenovo 100e Gen 2 Bottom Cover A4",
+        "Keyboard": "Lenovo 100e Gen 2 Keyboard & Palmrest A4",
+        "Touchpad": "Lenovo 100e Gen 2 Touchpad A4",
+        "Touchpad Cable": "Lenovo 100e Gen 2/300e Gen 2/500e Gen 2 Touchpad Cable - A4/Intel",
+        "Left Hinge": "Lenovo 100e Gen 2 Hinge A4/N4020 - Left",
+        "Right Hinge": "Lenovo 100e Gen 2 Hinge A4/N4020 - Right",
+        "Speakers": "Lenovo 100e Gen 2/300e Gen 2/500e Gen 2 Speakers - Intel/A4"
+    },
+
+    "Lenovo 100E G2 - Intel": {
+        "models":[
+            "Lenovo 100e Gen 2 N4000 - 4GB/32GB",
+            "Lenovo 100e Gen 2 N4020 - 4GB/32GB",
+            "Lenovo 100e Gen 2 N4020 - 4GB/32GB - No SD Reader"     
+        ],
+        "LCD": "Acer C720/Dell 11/Lenovo 11e/HP 11-G3/Lenovo N21/Samsung V2/Dell SS",
+        "LCD Cable": "Lenovo 100e Gen 2 LCD Cable A4/N4020",
+        "MB":{
+            "Lenovo 100e Gen 2 N4000 - 4GB/32GB":"Lenovo 100e Gen 2 Motherboard N4000 - 4GB/32GB",
+            "Lenovo 100e Gen 2 N4020 - 4GB/32GB":"Lenovo 100e Gen 2 Motherboard N4020",
+            "Lenovo 100e Gen 2 N4020 - 4GB/32GB - No SD Reader":"Lenovo 100e Gen 2 Motherboard N4020 - 4GB/32GB - No SD Reader"
+        },
+        "Wireless Card": "Lenovo 100e Gen 2/300e Gen 2/500e Gen 2/C340-11 Wireless Card - Intel",
+        "Battery": "Lenovo 100e Gen 2/300e Gen 2/500e Gen 2 Battery - Intel",
+        "Accessory Board": "Lenovo 100e Gen 2 USB Board N4020",
+        "Webcam": "Lenovo 100e Gen 2 A4/100e Gen 2 N4020 Webcam",
+        "Top Cover": "Lenovo 100e Gen 2 Back LCD Cover A4/N4020",
+        "Bezel": "Lenovo 100e Gen 2 LCD Bezel",
+        "Base Cover": "Lenovo 100e Gen 2 Bottom Cover N4020",
+        "Keyboard": "Lenovo 100e Gen 2 Keyboard & Palmrest N4000/N4020",
+        "Touchpad": "Lenovo 100e Gen 2/300e Gen 2/500e Gen 2 Touchpad - Intel",
+        "Touchpad Cable": "Lenovo 100e Gen 2/300e Gen 2/500e Gen 2 Touchpad Cable - A4/Intel",
+        "Left Hinge": "Lenovo 100e Gen 2 Hinge A4/N4020 - Left",
+        "Right Hinge": "Lenovo 100e Gen 2 Hinge A4/N4020 - Right",
+        "Speakers": "Lenovo 100e Gen 2/300e Gen 2/500e Gen 2 Speakers - Intel/A4"
+    },
+
+    "Lenovo 300e G2 - Intel":{
+        "models":[
+            "Lenovo 300e Gen 2 N4020 - 4GB/32GB - Dual Camera",
+            "Lenovo 300e Gen 2 N4000 - 4GB/32GB - Dual Camera",
+            "Lenovo 300e Gen 2 N4020 - 4GB/32GB - Single Camera"    
+        ],
+        "MB":{
+            "Lenovo 300e Gen 2 N4000 - 4GB/32GB - Dual Camera":"Lenovo 300e Gen 2 Motherboard N4000 - 4GB/32GB",
+            "Lenovo 300e Gen 2 N4020 - 4GB/32GB - Dual Camera":"Lenovo 300e Gen 2 Motherboard N4020 - 4GB/32GB - Dual Camera",
+            "Lenovo 300e Gen 2 N4020 - 4GB/32GB - Single Camera":"Lenovo 300e Gen 2 Motherboard N4020 - 4GB/32GB - Single Camera",
+            "300EG24020SCNSDRCHANGEME":"Lenovo 300e Gen 2 Motherboard N4020 - 4GB/32GB - Single Camera - nSDR"
+        },
+        "Touch LCD": "Lenovo 300e Gen 2 Touchscreen LCD - A4/Intel",
+        "Touch LCD Cable": "Lenovo 300e Gen 2 A4/N4000/N4020 LCD Cable",
+        "Thermal Module": "N/A",
+        "Wireless Card": "Lenovo 100e Gen 2/300e Gen 2/500e Gen 2/C340-11 Wireless Card - Intel",
+        "Battery": "Purchase - Lenovo 100e Gen 2/300e Gen 2/500e Gen 2 Battery - Intel",
+        "Daughter Board": "Lenovo 300e Gen 2 N4020/500e Gen 2 N4120 USB Board",
+        "Webcam": "Lenovo 300e Gen 2 A4/N4000/N4020 Webcam",
+        "Top Cover": "Lenovo 300e Gen 2/500e Gen 2 Back LCD Cover - A4/Intel/MTK",
+        "Bezel": "Lenovo 300e Gen 2/500e Gen 2 Hinge Cover - A4/Intel/MTK",
+        "Base Cover": "Lenovo 300e Gen 2 Bottom Cover - Intel",
+        "Keyboard (dual cam)": "Lenovo 300e Gen 2 Keyboard & Palmrest - Intel - Dual Camera",
+        "Keyboard (single cam)": "Lenovo 300e Gen 2 Keyboard & Palmrest N4020 - Single Camera",
+        "Keyboard Camera": "Lenovo 300e Gen 2/500e Gen 2 Keyboard Camera",
+        "Touchpad": "Lenovo 100e Gen 2/300e Gen 2/500e Gen 2 Touchpad - Intel",
+        "Touchpad Cable": "Lenovo 100e Gen 2/300e Gen 2/500e Gen 2 Touchpad Cable - A4/Intel",
+        "Left Hinge": "Lenovo 300e Gen 2/500e Gen 2 Hinge - Left - A4/Intel",
+        "Right Hinge": "Lenovo 300e Gen 2/500e Gen 2 Hinge - Right - A4/Intel",
+        "Speakers": "Lenovo 100e Gen 2/300e Gen 2/500e Gen 2 Speakers - Intel/A4"
+    },
+
+    "Lenovo 300e G2 - AMD":{
+        "models":[
+            "Lenovo 300e Gen 2 A4 - 4GB/32GB - Single Camera"     
+        ],
+        "Touch LCD": "Lenovo 300e Gen 2 Touchscreen LCD - A4/Intel",
+        "Touch LCD Cable": "Lenovo 300e Gen 2 A4/N4000/N4020 LCD Cable",
+        "MB":{
+            "Lenovo 300e Gen 2 A4 - 4GB/32GB - Single Camera":"Lenovo 300e Gen 2 Motherboard A4 - 4GB/32GB - Single Camera"
+        },
+        "Wireless Card": "Lenovo 100e Gen 2/300e Gen 2/14e A4 Wireless Card A4",
+        "Battery": "Lenovo 100e Gen 2/300e Gen 2 Battery A4",
+        "Daughter Board": "Lenovo 300e Gen 2 USB Board A4",
+        "Webcam": "Lenovo 300e Gen 2 A4/N4000/N4020 Webcam",
+        "Top Cover": "Lenovo 300e Gen 2/500e Gen 2 Back LCD Cover - A4/Intel/MTK",
+        "Bezel": "Lenovo 300e Gen 2/500e Gen 2 Hinge Cover - A4/Intel/MTK",
+        "Base Cover": "Lenovo 300e Gen 2 Bottom Cover A4",
+        "Keyboard (dual cam)": "Lenovo 300e Gen 2 Keyboard & Palmrest A4 - Dual Camera",
+        "Keyboard (single cam)": "Lenovo 300e Gen 2 Keyboard & Palmrest A4 - Single Camera",
+        "Keyboard Camera": "Lenovo 300e Gen 2 Keyboard Camera A4",
+        "Touchpad": "Lenovo 300e Gen 2 Touchpad - A4",
+        "Touchpad Cable": "Lenovo 100e Gen 2/300e Gen 2/500e Gen 2 Touchpad Cable - A4/Intel",
+        "Left Hinge": "Lenovo 300e Gen 2/500e Gen 2 Hinge - Left - Intel",
+        "Right Hinge": "Lenovo 300e Gen 2/500e Gen 2 Hinge - Right - Intel",
+        "Speakers": "Lenovo 100e Gen 2/300e Gen 2/500e Gen 2 Speakers - Intel/A4"
+    },
+
+    "Lenovo 500e Gen 2":{
+        "models":[
+                "Lenovo 500e Gen 2 N4100 - 4GB/32GB",
+                "Lenovo 500e Gen 2 N4120 - 4GB/32GB",
+                "Lenovo 500e Gen 2 N4120 - 4GB/32GB - No SD Reader",
+                "Lenovo 500e Gen 2 N4120 - 8GB/64GB - No SD Reader"      
+        ],
+        "MB":{
+            "Lenovo 500e Gen 2 N4100 - 4GB/32GB":"Lenovo 500e Gen 2 Motherboard N4100 4GB/32GB",
+            "Lenovo 500e Gen 2 N4120 - 4GB/32GB":"Lenovo 500e Gen 2 Motherboard N4120 - 4GB/32GB",
+            "Lenovo 500e Gen 2 N4120 - 4GB/32GB - No SD Reader":"Lenovo 500e Gen 2 Motherboard N4100 4GB/32GB",
+            "Lenovo 500e Gen 2 N4120 - 8GB/64GB - No SD Reader":"Lenovo 500e Gen 2 Motherboard N4120 8GB/64GB"
+        },
+        "Touch LCD":"Lenovo 500e Gen 2 Touchscreen LCD",
+        "Touch LCD Cable":"Lenovo 500e Gen 2 LCD Cable",    
+        "Wireless Card":"Lenovo 100e Gen 2/300e Gen 2/500e Gen 2/C340-11 Wireless Card - Intel",
+        "Battery":"Purchase - Lenovo 100e Gen 2/300e Gen 2 Battery A4",
+        "Daughter Board":"Lenovo 300e Gen 2 N4020/500e Gen 2 N4120 USB Board",
+        "Webcam":"Lenovo 500e Gen 2 Webcam",
+        "Top Cover":"Lenovo 300e Gen 2/500e Gen 2 Back LCD Cover - A4/Intel/MTK",
+        "Bezel":"Lenovo 300e Gen 2/500e Gen 2 Hinge Cover - A4/Intel/MTK",
+        "Base Cover":"Lenovo 500e Gen 2 Base Enclosure",
+        "Keyboard N4100":"Lenovo 500e Gen 2 Keyboard & Palmrest N4100",
+        "Keyboard N4120":"Lenovo 500e Gen 2 Keyboard & Palmrest N4120",
+        "Keyboard Camera":"Lenovo 300e Gen 2/500e Gen 2 Keyboard Camera",
+        "Touchpad":"Lenovo 100e Gen 2/300e Gen 2/500e Gen 2 Touchpad - Intel",
+        "Touchpad Cable":"Lenovo 100e Gen 2/300e Gen 2/500e Gen 2 Touchpad Cable - A4/Intel",
+        "Left Hinge":"Lenovo 300e Gen 2/500e Gen 2 Hinge - Left - A4/Intel",
+        "Right Hinge":"Lenovo 300e Gen 2/500e Gen 2 Hinge - Left - A4/Intel",
+        "Speakers":"Lenovo 100e Gen 2/300e Gen 2/500e Gen 2 Speakers - Intel/A4"
+    },  
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    "example":{
+        "models":[
+            "",
+            "",
+            "",
+            "",     
+            ""
+        ],
+        "MB":{
+            "null1":"",
+            "null2":"",
+            "null3":""
+        }
+
+    }
+}

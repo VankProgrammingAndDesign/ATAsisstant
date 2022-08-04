@@ -91,7 +91,7 @@ def getTicketInfo(ticketNum): # opens new tab and searches for ticket and grabs 
     parts = getPickeableParts(deviceName)
     
     #Gets AT motherboard search name and replaces mb array in parts dict
-    moboName=parts['MB'].get(deviceName)
+    moboName=parts['MB'].get(deviceName) # Add try catch in case model is not found in parts.json
     replaceWithMobo = {'MB':moboName}
     parts.update(replaceWithMobo)
 

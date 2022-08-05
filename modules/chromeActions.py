@@ -4,6 +4,7 @@ from selenium.webdriver.chrome.service import Service
 
 import json
 
+import logins
 from . import twofa
 import time
 
@@ -27,17 +28,20 @@ driver.set_window_size(1024,600)
 
 def login(): # TODO LOGIN TO AT
 
+    login = logins.getLogins()
+    userName = login[0]
+    pw = login[1]
         #opens autotask login
     driver.get("https://www.autotask.net/Mvc/Framework/Authentication.mvc/Authenticate")
 
         #Login To Autotask and Wait for 2fa code input. 
         #email Login
-    loginEmail= driver.find_element(By.XPATH,"/html/body/div[1]/div/div[2]/div[3]/div[1]/div[1]/div[3]/input").send_keys("rvankerkvoorde@technologyresourceadvisors.com")
+    loginEmail= driver.find_element(By.XPATH,"/html/body/div[1]/div/div[2]/div[3]/div[1]/div[1]/div[3]/input").send_keys(userName)
     comfirmEmail = driver.find_element(By.XPATH,"/html/body/div[1]/div/div[2]/div[3]/div[1]/div[1]/div[4]/div[3]/div/div").click()
 
         #PASS entry TODO protect login info 
     elem=WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,"/html/body/div[1]/div/div[2]/div[3]/div[2]/div[1]/div[4]/input")))
-    loginPass = driver.find_element(By.XPATH,"/html/body/div[1]/div/div[2]/div[3]/div[2]/div[1]/div[4]/input").send_keys("TR@4life!")
+    loginPass = driver.find_element(By.XPATH,"/html/body/div[1]/div/div[2]/div[3]/div[2]/div[1]/div[4]/input").send_keys(pw)
     confirmPass = driver.find_element(By.XPATH,"/html/body/div[1]/div/div[2]/div[3]/div[2]/div[1]/div[5]/div[4]/div/div").click()
 
         #2fa login

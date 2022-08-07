@@ -1252,17 +1252,14 @@ class Ui_MainWindow(object):
         __qtablewidgetitem13 = QTableWidgetItem()
         self.table_pickeableParts.setVerticalHeaderItem(2, __qtablewidgetitem13)
         __qtablewidgetitem14 = QTableWidgetItem()
-        __qtablewidgetitem14.setCheckState(Qt.Unchecked);
         self.table_pickeableParts.setItem(0, 0, __qtablewidgetitem14)
         __qtablewidgetitem15 = QTableWidgetItem()
         self.table_pickeableParts.setItem(0, 1, __qtablewidgetitem15)
         __qtablewidgetitem16 = QTableWidgetItem()
         self.table_pickeableParts.setItem(0, 2, __qtablewidgetitem16)
         __qtablewidgetitem17 = QTableWidgetItem()
-        __qtablewidgetitem17.setCheckState(Qt.Unchecked);
         self.table_pickeableParts.setItem(1, 0, __qtablewidgetitem17)
         __qtablewidgetitem18 = QTableWidgetItem()
-        __qtablewidgetitem18.setCheckState(Qt.Unchecked);
         self.table_pickeableParts.setItem(2, 0, __qtablewidgetitem18)
         self.table_pickeableParts.setObjectName(u"table_pickeableParts")
         sizePolicy3.setHeightForWidth(self.table_pickeableParts.sizePolicy().hasHeightForWidth())

@@ -14,6 +14,7 @@
 #
 # ///////////////////////////////////////////////////////////////
 
+from msilib.schema import CheckBox
 import sys
 import os
 import platform
@@ -135,6 +136,7 @@ class MainWindow(QMainWindow):
     # Post here your functions for clicked buttons
     # ///////////////////////////////////////////////////////////////
     def buttonClick(self):
+        #T20220602.0687
         
         #btn execution functions
         def ticketSearchPick(self):
@@ -147,6 +149,7 @@ class MainWindow(QMainWindow):
             self.deviceName = info[1]
             self.parts = info[2]
             self.btnCats = info[3]
+            showPickeableParts(self)
         
         def ticketSearchVerify(self):
             searchEntry = widgets.entry_ticketnum_verify.text()
@@ -161,7 +164,37 @@ class MainWindow(QMainWindow):
         def showTicketInfoPick(self):
             widgets.table_ticketinfo_pick.setItem( 0 , 0 , QTableWidgetItem(self.ticketNum)) # Ticket Number
             widgets.table_ticketinfo_pick.setItem( 0 , 1 , QTableWidgetItem(self.deviceName)) # Device Type
-                 
+        
+        def showPickeableParts(self):
+            
+            self.checkBoxes = []
+            widgets.table_pickeableParts.setRowCount(len(self.parts)) #sets total rows to length of self.parts
+            for index, cat in enumerate(self.parts): # Fills category column
+                widgets.table_pickeableParts.setItem( index , 1 , QTableWidgetItem(cat)) 
+                
+            
+            for index, part in enumerate(self.parts.values()): 
+                # fills autotask ID column
+                widgets.table_pickeableParts.setItem( index , 2 , QTableWidgetItem(part))
+                
+                # fills checkbox column
+                checkBox = QCheckBox(widgets.table_pickeableParts)
+                self.checkBoxes.append(checkBox)
+                widgets.table_pickeableParts.setCellWidget(index , 0, checkBox)
+                checkBox.setStyleSheet("margin-left:80%; margin-right:20%;")
+                
+                
+        def checkForPartsToPick(self):
+            self.partsToPick = []
+            partList = list(self.parts.values())
+            for index, cbox in enumerate(self.checkBoxes):
+                if cbox.isChecked():
+                    self.partsToPick.append(partList[index])
+            print(self.partsToPick)
+            
+        
+        def pickParts(self):
+            checkForPartsToPick(self)
 
         # GET BUTTON CLICKED
         btn = self.sender()
@@ -195,6 +228,9 @@ class MainWindow(QMainWindow):
         if btnName == "btn_ticketSearch_verify":
             ticketSearchVerify(self)
 
+        if btnName == "btn_pickParts":
+            pickParts(self)
+            
         # PRINT BTN NAME
         print(f'Button "{btnName}" pressed!')
         

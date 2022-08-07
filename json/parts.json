@@ -524,35 +524,11 @@
         "Left Hinge":"Lenovo 300e Gen 2/500e Gen 2 Hinge - Left - A4/Intel",
         "Right Hinge":"Lenovo 300e Gen 2/500e Gen 2 Hinge - Left - A4/Intel",
         "Speakers":"Lenovo 100e Gen 2/300e Gen 2/500e Gen 2 Speakers - Intel/A4"
-    },  
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    },      
 
     "example":{
         "models":[
-            "",
-            "",
-            "",
-            "",     
-            ""
+            
         ],
         "MB":{
             "null1":"",

@@ -198,15 +198,6 @@ class MainWindow(QMainWindow):
         # PRINT BTN NAME
         print(f'Button "{btnName}" pressed!')
         
-        
-        
-        
-        
-        
-        
-    
-    
-    
 
 
     # RESIZE EVENTS
@@ -231,4 +222,4 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     app.setWindowIcon(QIcon("icon.ico"))
     window = MainWindow()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

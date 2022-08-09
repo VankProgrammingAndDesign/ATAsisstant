@@ -195,6 +195,7 @@ class MainWindow(QMainWindow):
         
         def pickParts(self):
             checkForPartsToPick(self)
+            chromeActions.pickParts(self.ticketID,self.partsToPick)
 
         # GET BUTTON CLICKED
         btn = self.sender()

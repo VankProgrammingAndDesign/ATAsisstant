@@ -308,7 +308,8 @@
     
     "HP 11 G7 EE": {
         "models":[
-            "HP Chromebook 11 G7 EE 4GB/16GB"     
+            "HP Chromebook 11 G7 EE 4GB/16GB",
+            "HP Chromebook 11 G7 EE 4GB/32GB"     
         ],
         "LCD": "Acer C720/Dell 11/Lenovo 11e/HP 11-G3/Lenovo N21/Samsung V2/Dell SS",
         "LCD Cable": "HP 11 G7 EE LCD Cable",

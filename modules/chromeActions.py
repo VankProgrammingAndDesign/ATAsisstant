@@ -13,7 +13,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.keys import Keys
-
+from selenium.webdriver.support.ui import Select
 
 #starts chrome instance
 #options to clear errors
@@ -204,7 +204,113 @@ def pickSinglePart(partNameAT, ticketID): #TODO opens new page and goes through 
     saveClose.click()
     driver.switch_to.window(driver.window_handles[1])
 
-#def forwardTicket #TODO forwards ticket to specific name and status
+def forwardTicket(ticketID, forwardInfo): #TODO forwards ticket to specific name and status
+    
+    def changePrimary(newPrimary):
+        print("Changing primary to:..." + newPrimary)
+        
+        #Primary Resource Drop
+        #/html/body/form/div/div[5]/table/tbody/tr[2]/td/div/div[2]/table/tbody/tr/td[3]/table/tbody/tr[2]/td/table/tbody/tr/td[1]/select
+        WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,"/html/body/form/div/div[5]/table/tbody/tr[2]/td/div/div[2]/table/tbody/tr/td[3]/table/tbody/tr[2]/td/table/tbody/tr/td[1]/select")))
+        selectrPrimaryDrop= Select(driver.find_element(By.XPATH,"/html/body/form/div/div[5]/table/tbody/tr[2]/td/div/div[2]/table/tbody/tr/td[3]/table/tbody/tr[2]/td/table/tbody/tr/td[1]/select"))
+        selectrPrimaryDrop.select_by_visible_text(newPrimary + " (Client Service Engineer L1)")
+        
+    def changeStatus(newStatus):
+        print("Changing Status to:..." + newStatus)
+        
+        #Status Drop
+        #/html/body/form/div/div[5]/table/tbody/tr[3]/td/div/div[2]/table/tbody/tr[8]/td[1]/select
+        WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,"/html/body/form/div/div[5]/table/tbody/tr[3]/td/div/div[2]/table/tbody/tr[8]/td[1]/select")))
+        selectrStatusDrop= Select(driver.find_element(By.XPATH,"/html/body/form/div/div[5]/table/tbody/tr[3]/td/div/div[2]/table/tbody/tr[8]/td[1]/select"))
+        selectrStatusDrop.select_by_visible_text(newStatus)
+        
+        
+        
+    #TODO
+    #def changeSubIssType(newSIType):
+    
+    def changeAccDmg(newAccDmg):
+        print("Changing Accidental Damage to:..." + newAccDmg)
+        
+        #Damage Drop
+        #/html/body/form/div/div[5]/table/tbody/tr[4]/td/div/div[2]/table/tbody/tr/td/table/tbody/tr[1]/td[1]/div/span/select
+        WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,"/html/body/form/div/div[5]/table/tbody/tr[4]/td/div/div[2]/table/tbody/tr/td/table/tbody/tr[1]/td[1]/div/span/select")))
+        selectrDamageDrop= Select(driver.find_element(By.XPATH,"/html/body/form/div/div[5]/table/tbody/tr[4]/td/div/div[2]/table/tbody/tr/td/table/tbody/tr[1]/td[1]/div/span/select"))
+        selectrDamageDrop.select_by_visible_text(newAccDmg)
+        
+    def changeWarrClaim(newWarrClaim):
+        print("Changing Accidental Damage to:..." + newWarrClaim)
+        
+        #Warr Claim Drop
+        #/html/body/form/div/div[5]/table/tbody/tr[4]/td/div/div[2]/table/tbody/tr/td/table/tbody/tr[8]/td[1]/div/span/select
+        WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,"/html/body/form/div/div[5]/table/tbody/tr[4]/td/div/div[2]/table/tbody/tr/td/table/tbody/tr[8]/td[1]/div/span/select")))
+        selectrWarrantyDrop= Select(driver.find_element(By.XPATH,"/html/body/form/div/div[5]/table/tbody/tr[4]/td/div/div[2]/table/tbody/tr/td/table/tbody/tr[8]/td[1]/div/span/select"))
+        selectrWarrantyDrop.select_by_visible_text(newWarrClaim)
+    
+    confirmedForward = False
+    
+    primaryDrops=["Ryan Vankerkvoorde"]
+    statusDrops=["Repaired", "In Progress", "Waiting Parts","Battery Swap Required", "Waiting Repair"]
+    damageDrops=["Yes", "No"]
+    warrantyDrops=["In warranty accidental damage", "No Part Need Out of Warranty", "Parts Replaced in Warranty" ]
+    
+    forwardInfoTest = {
+        "Primary": "Vankerkvoorde, Ryan",
+        "Status": "In Progress",
+        "AccidentalDamage": "Yes",
+        "WarrantyClaim": "No Part Need Out of Warranty"
+        }
+    
+    #"SubIssueType": "",
+    
+    #"Secondary": "",
+    #"QAResource": "",
+    #"ReworkResource": "",
+    #"OriginalTechnician": "",
+    #"QualityControl": ""
+    
+    #Open Ticket Page
+    openTicketURL(ticketID)
+    
+    #Open Forward Page
+    
+    #Forward Button
+    #/html/body/div[1]/div[4]/div[3]
+    forwardButton=WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,"/html/body/div[1]/div[4]/div[3]")))
+    forwardButton.click()
+    #switch to forward tab
+    driver.switch_to.window(driver.window_handles[2])
+    
+    #Go through passed dict and perform page changes for each one
+    for option in forwardInfoTest:
+            if(option == "Primary"):
+                changePrimary(forwardInfoTest[option])
+            if(option == "Status"):
+                changeStatus(forwardInfoTest[option])
+            
+            #if(option == "SubIssueType"):
+            
+            
+            
+            #Need to add try and click + on "User Defined Fields" on failure
+            #if(option == "AccidentalDamage"):
+                changeAccDmg(forwardInfoTest[option])
+            
+            #if(option == "WarrantyClaim"):
+                changeWarrClaim(forwardInfoTest[option])
+            
+            #if(option == "Secondary"):
+            #if(option == "QAResource"):
+            #if(option == "ReworkResource"):
+            #if(option == "OriginalTechnician"):
+            #if(option == "QualityControl"):
+        
+    #Save and Close
+    
+    #/html/body/form/div/div[2]/ul/li[1]/a
+    saveCloseButton=WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,"/html/body/form/div/div[2]/ul/li[1]/a")))      
+    #saveCloseButton.click()
+
 
 #def createNotesEntry #TODO open notes, add notes based on parts picked
 

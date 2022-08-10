@@ -191,7 +191,7 @@ class MainWindow(QMainWindow):
                 if cbox.isChecked():
                     self.partsToPick.append(partList[index])
             print(self.partsToPick)
-            
+        
         
         def pickParts(self):
             checkForPartsToPick(self)
@@ -231,6 +231,9 @@ class MainWindow(QMainWindow):
 
         if btnName == "btn_pickParts":
             pickParts(self)
+            
+        if btnName =="btn_forward_pick":
+            chromeActions.forwardTicket(self.ticketID,{"Primary":"Ryan Vankerkvoorde"})
             
         # PRINT BTN NAME
         print(f'Button "{btnName}" pressed!')

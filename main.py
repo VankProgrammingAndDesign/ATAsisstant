@@ -1,19 +1,3 @@
-# ///////////////////////////////////////////////////////////////
-#
-# BY: WANDERSON M.PIMENTA
-# PROJECT MADE WITH: Qt Designer and PySide6
-# V: 1.0.0
-#
-# This project can be used freely for all uses, as long as they maintain the
-# respective credits only in the Python scripts, any information in the visual
-# interface (GUI) can be modified without any implication.
-#
-# There are limitations on Qt licenses if you want to use your products
-# commercially, I recommend reading them on the official website:
-# https://doc.qt.io/qtforpython/licenses.html
-#
-# ///////////////////////////////////////////////////////////////
-
 from msilib.schema import CheckBox
 import sys
 import os
@@ -24,14 +8,11 @@ import platform
 from modules import *
 from modules import chromeActions
 
-
 from widgets import *
 os.environ["QT_FONT_DPI"] = "96" # FIX Problem for High DPI and Scale above 100%
 
-
 #IMPORT / DICT
 from typing import Dict
-
 
 # SET AS GLOBAL WIDGETS
 # ///////////////////////////////////////////////////////////////
@@ -99,12 +80,26 @@ class MainWindow(QMainWindow):
             UIFunctions.toggleLeftBox(self, True)
         widgets.toggleLeftBox.clicked.connect(openCloseLeftBox)
         widgets.extraCloseColumnBtn.clicked.connect(openCloseLeftBox)
-
+        
         # EXTRA RIGHT BOX
         def openCloseRightBox():
             UIFunctions.toggleRightBox(self, True)
         #widgets.settingsTopBtn.clicked.connect(openCloseRightBox)
 
+        # Dropdowns
+        primaryDrops=["Vankerkvoorde, Ryan"]
+        statusDrops=["Repaired", "In Progress", "Waiting Parts","Battery Swap Required", "Waiting Repair"]
+        damageDrops=["Yes", "No"]
+        warrantyDrops=["In warranty accidental damage", "No Part Need Out of Warranty", "Parts Replaced in Warranty" ]
+        
+        widgets.comboBox_primaryResource_pick.addItems(primaryDrops)
+        widgets.comboBox_status_pick.addItems(statusDrops)
+        widgets.comboBox_damage_pick.addItems(damageDrops)
+        widgets.comboBox_warranty_pick.addItems(warrantyDrops)
+        
+        
+        
+        
         # SHOW APP
         # ///////////////////////////////////////////////////////////////
         self.show()
@@ -228,7 +223,26 @@ class MainWindow(QMainWindow):
             pickParts(self)
             
         if btnName =="btn_forward_pick":
-            chromeActions.forwardTicket(self.ticketID,{"Primary":"Ryan Vankerkvoorde"})
+            
+            forward_info= dict()
+            
+            if(widgets.checkBox_primaryResource_pick.isChecked):
+                currentSelection=widgets.comboBox_primaryResource_pick.currentText()
+                forward_info.update({"Primary":currentSelection})
+            
+            if(widgets.checkBox_status_pick.isChecked):
+                currentSelection=widgets.comboBox_status_pick.currentText()
+                forward_info.update({"Status":currentSelection})
+                
+            if(widgets.checkBox_damage_pick.isChecked):
+                currentSelection=widgets.comboBox_damage_pick.currentText()
+                forward_info.update({"AccidentalDamage":currentSelection})
+                
+            if(widgets.checkBox_warranty_pick.isChecked):
+                currentSelection=widgets.comboBox_warranty_pick.currentText()
+                forward_info.update({"WarrantyClaim":currentSelection})
+            
+            chromeActions.forwardTicket(self.ticketID,forward_info)
             
         # PRINT BTN NAME
         print(f'Button "{btnName}" pressed!')

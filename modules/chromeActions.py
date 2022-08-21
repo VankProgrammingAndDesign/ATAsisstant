@@ -249,11 +249,6 @@ def forwardTicket(ticketID, forwardInfo): #TODO forwards ticket to specific name
     
     confirmedForward = False
     
-    primaryDrops=["Ryan Vankerkvoorde"]
-    statusDrops=["Repaired", "In Progress", "Waiting Parts","Battery Swap Required", "Waiting Repair"]
-    damageDrops=["Yes", "No"]
-    warrantyDrops=["In warranty accidental damage", "No Part Need Out of Warranty", "Parts Replaced in Warranty" ]
-    
     forwardInfoTest = {
         "Primary": "Vankerkvoorde, Ryan",
         "Status": "In Progress",
@@ -288,19 +283,19 @@ def forwardTicket(ticketID, forwardInfo): #TODO forwards ticket to specific name
     expandUDF.click()
             
     #Go through passed dict and perform page changes for each one
-    for option in forwardInfoTest:
+    for option in forwardInfo:
             if(option == "Primary"):
-                changePrimary(forwardInfoTest[option])
+                changePrimary(forwardInfo[option])
             if(option == "Status"):
-                changeStatus(forwardInfoTest[option])
+                changeStatus(forwardInfo[option])
             
             #if(option == "SubIssueType"):
             
             if(option == "AccidentalDamage"):
-                changeAccDmg(forwardInfoTest[option])
+                changeAccDmg(forwardInfo[option])
             
             if(option == "WarrantyClaim"):
-                changeWarrClaim(forwardInfoTest[option])
+                changeWarrClaim(forwardInfo[option])
             
             #if(option == "Secondary"):
             #if(option == "QAResource"):

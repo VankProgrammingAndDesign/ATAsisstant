@@ -62,7 +62,7 @@ class MainWindow(QMainWindow):
 
         # TOGGLE MENU
         # ///////////////////////////////////////////////////////////////
-        widgets.toggleButton.clicked.connect(lambda: UIFunctions.toggleMenu(self, True))
+        widgets.toggleButton.clicked.connect(lambda: UIFunctions.toggleMenu(self, False))
 
         # SET UI DEFINITIONS
         # ///////////////////////////////////////////////////////////////
@@ -87,10 +87,6 @@ class MainWindow(QMainWindow):
         widgets.btn_forward_verify.clicked.connect(self.buttonClick)
         widgets.btn_pickParts.clicked.connect(self.buttonClick)
         widgets.btn_verify.clicked.connect(self.buttonClick)
-        
-        
-        
-        
         
         # LEFT MENUS
         widgets.btn_home.clicked.connect(self.buttonClick)
@@ -165,8 +161,7 @@ class MainWindow(QMainWindow):
             widgets.table_ticketinfo_pick.setItem( 0 , 0 , QTableWidgetItem(self.ticketNum)) # Ticket Number
             widgets.table_ticketinfo_pick.setItem( 0 , 1 , QTableWidgetItem(self.deviceName)) # Device Type
         
-        def showPickeableParts(self):
-            
+        def showPickeableParts(self):   
             self.checkBoxes = []
             widgets.table_pickeableParts.setRowCount(len(self.parts)) #sets total rows to length of self.parts
             for index, cat in enumerate(self.parts): # Fills category column

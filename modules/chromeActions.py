@@ -257,8 +257,8 @@ def forwardTicket(ticketID, forwardInfo): #TODO forwards ticket to specific name
     forwardInfoTest = {
         "Primary": "Vankerkvoorde, Ryan",
         "Status": "In Progress",
-        "AccidentalDamage": "Yes",
-        "WarrantyClaim": "No Part Need Out of Warranty"
+        "AccidentalDamage": "No",
+        "WarrantyClaim": "In warranty accidental damage"
         }
     
     #"SubIssueType": "",
@@ -281,6 +281,12 @@ def forwardTicket(ticketID, forwardInfo): #TODO forwards ticket to specific name
     #switch to forward tab
     driver.switch_to.window(driver.window_handles[2])
     
+    
+    #Expand UDFs
+    #/html/body/form/div/div[5]/table/tbody/tr[4]/td/div/div[1]/div
+    expandUDF=WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,"/html/body/form/div/div[5]/table/tbody/tr[4]/td/div/div[1]/div")))
+    expandUDF.click()
+            
     #Go through passed dict and perform page changes for each one
     for option in forwardInfoTest:
             if(option == "Primary"):
@@ -290,13 +296,10 @@ def forwardTicket(ticketID, forwardInfo): #TODO forwards ticket to specific name
             
             #if(option == "SubIssueType"):
             
-            
-            
-            #Need to add try and click + on "User Defined Fields" on failure
-            #if(option == "AccidentalDamage"):
+            if(option == "AccidentalDamage"):
                 changeAccDmg(forwardInfoTest[option])
             
-            #if(option == "WarrantyClaim"):
+            if(option == "WarrantyClaim"):
                 changeWarrClaim(forwardInfoTest[option])
             
             #if(option == "Secondary"):
@@ -306,11 +309,9 @@ def forwardTicket(ticketID, forwardInfo): #TODO forwards ticket to specific name
             #if(option == "QualityControl"):
         
     #Save and Close
-    
     #/html/body/form/div/div[2]/ul/li[1]/a
     saveCloseButton=WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,"/html/body/form/div/div[2]/ul/li[1]/a")))      
     #saveCloseButton.click()
-
 
 #def createNotesEntry #TODO open notes, add notes based on parts picked
 

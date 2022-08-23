@@ -186,6 +186,27 @@ class MainWindow(QMainWindow):
         def pickParts(self):
             checkForPartsToPick(self)
             chromeActions.pickParts(self.ticketID,self.partsToPick)
+            
+        def forward(self):
+            forward_info= dict()
+            
+            if(widgets.checkBox_primaryResource_pick.isChecked):
+                currentSelection=widgets.comboBox_primaryResource_pick.currentText()
+                forward_info.update({"Primary":currentSelection})
+            
+            if(widgets.checkBox_status_pick.isChecked):
+                currentSelection=widgets.comboBox_status_pick.currentText()
+                forward_info.update({"Status":currentSelection})
+                
+            if(widgets.checkBox_damage_pick.isChecked):
+                currentSelection=widgets.comboBox_damage_pick.currentText()
+                forward_info.update({"AccidentalDamage":currentSelection})
+                
+            if(widgets.checkBox_warranty_pick.isChecked):
+                currentSelection=widgets.comboBox_warranty_pick.currentText()
+                forward_info.update({"WarrantyClaim":currentSelection})
+            
+            chromeActions.forwardTicket(self.ticketID,forward_info)
 
         # GET BUTTON CLICKED
         btn = self.sender()
@@ -208,10 +229,7 @@ class MainWindow(QMainWindow):
             widgets.stackedWidget.setCurrentWidget(widgets.new_page) # SET PAGE
             UIFunctions.resetStyle(self, btnName) # RESET ANOTHERS BUTTONS SELECTED
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet())) # SELECT MENU
-
-        if btnName == "btn_save":
-            print("Save BTN clicked!")
-            
+   
         if btnName == "btn_ticketSearch_pick":
             ticketSearchPick(self)
             showTicketInfoPick(self)
@@ -223,32 +241,12 @@ class MainWindow(QMainWindow):
             pickParts(self)
             
         if btnName =="btn_forward_pick":
+            forward(self)
             
-            forward_info= dict()
-            
-            if(widgets.checkBox_primaryResource_pick.isChecked):
-                currentSelection=widgets.comboBox_primaryResource_pick.currentText()
-                forward_info.update({"Primary":currentSelection})
-            
-            if(widgets.checkBox_status_pick.isChecked):
-                currentSelection=widgets.comboBox_status_pick.currentText()
-                forward_info.update({"Status":currentSelection})
-                
-            if(widgets.checkBox_damage_pick.isChecked):
-                currentSelection=widgets.comboBox_damage_pick.currentText()
-                forward_info.update({"AccidentalDamage":currentSelection})
-                
-            if(widgets.checkBox_warranty_pick.isChecked):
-                currentSelection=widgets.comboBox_warranty_pick.currentText()
-                forward_info.update({"WarrantyClaim":currentSelection})
-            
-            chromeActions.forwardTicket(self.ticketID,forward_info)
             
         # PRINT BTN NAME
         print(f'Button "{btnName}" pressed!')
         
-
-
     # RESIZE EVENTS
     # ///////////////////////////////////////////////////////////////
     def resizeEvent(self, event):

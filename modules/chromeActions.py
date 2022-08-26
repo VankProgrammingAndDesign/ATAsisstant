@@ -24,7 +24,7 @@ s=Service('modules/chromedriver.exe')
 #opens new chrome instance 
 driver = webdriver.Chrome(service=s,options=options)
 driver.set_window_position(-10,-10)
-driver.set_window_size(1024,600)
+driver.set_window_size(1250,700)
 
 def login(): # TODO LOGIN TO AT
 
@@ -36,20 +36,20 @@ def login(): # TODO LOGIN TO AT
 
         #Login To Autotask and Wait for 2fa code input. 
         #email Login
-    loginEmail= driver.find_element(By.XPATH,"/html/body/div[1]/div/div[2]/div[3]/div[1]/div[1]/div[3]/input").send_keys(userName)
-    comfirmEmail = driver.find_element(By.XPATH,"/html/body/div[1]/div/div[2]/div[3]/div[1]/div[1]/div[4]/div[3]/div/div").click()
+    emailEntry= driver.find_element(By.XPATH,"/html/body/div[1]/div/div[1]/div[3]/div[1]/div[1]/div[2]/input").send_keys(userName)
+    continueBtn = driver.find_element(By.XPATH,"/html/body/div[1]/div/div[1]/div[3]/div[1]/div[1]/div[4]/div").click()
 
         #PASS entry TODO protect login info 
-    elem=WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,"/html/body/div[1]/div/div[2]/div[3]/div[2]/div[1]/div[4]/input")))
-    loginPass = driver.find_element(By.XPATH,"/html/body/div[1]/div/div[2]/div[3]/div[2]/div[1]/div[4]/input").send_keys(pw)
-    confirmPass = driver.find_element(By.XPATH,"/html/body/div[1]/div/div[2]/div[3]/div[2]/div[1]/div[5]/div[4]/div/div").click()
+    elem=WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,"/html/body/div[1]/div/div[1]/div[3]/div[2]/div[1]/div[3]/input")))
+    passEntry = driver.find_element(By.XPATH,"/html/body/div[1]/div/div[1]/div[3]/div[2]/div[1]/div[3]/input").send_keys(pw)
+    confirmPass = driver.find_element(By.XPATH,"/html/body/div[1]/div/div[1]/div[3]/div[2]/div[1]/div[4]/div").click()
 
         #2fa login
     generateCode= twofa
-    twofaCodeBox=WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,"/html/body/div[1]/div/div[2]/div[3]/div[5]/div[1]/div[3]/input")))
+    twofaCodeBox=WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,"/html/body/div[1]/div/div[1]/div[3]/div[5]/div[1]/div[2]/input")))
     recentCode = generateCode.getNewCode()
-    entryBox = driver.find_element(By.XPATH,"/html/body/div[1]/div/div[2]/div[3]/div[5]/div[1]/div[3]/input").send_keys(recentCode)
-    confirmCode = driver.find_element(By.XPATH,"/html/body/div[1]/div/div[2]/div[3]/div[5]/div[1]/div[5]/div[2]").click()
+    entryBox = driver.find_element(By.XPATH,"/html/body/div[1]/div/div[1]/div[3]/div[5]/div[1]/div[2]/input").send_keys(recentCode)
+    confirmCode = driver.find_element(By.XPATH,"/html/body/div[1]/div/div[1]/div[3]/div[5]/div[1]/div[4]/div").click()
     
     #Print Current supported models
     getSupportedModels()
@@ -91,6 +91,47 @@ def getTicketInfo(ticketNum): # opens new tab and searches for ticket and grabs 
     print(title.get_attribute('innerText'))
     deviceName=(title.get_attribute('innerText'))
 
+    #Output School name
+    school=WebDriverWait(driver,10).until(EC.visibility_of_element_located((By.XPATH,"/html/body/div[4]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div/div/div")))
+    print("School: ")
+    print(school.get_attribute('innerText'))
+    schoolName=(school.get_attribute('innerText'))
+    
+    #Open Asset Page
+    #/html/body/div[4]/div[1]/div[2]/div[4]/div/div[2]/div/div/div[1]/div[2]/div/div/div/div
+    assetLink=WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,"/html/body/div[4]/div[1]/div[2]/div[4]/div/div[2]/div/div/div[1]/div[2]/div/div/div/div")))
+    assetLink.click()
+    
+    #Switch to ticket tab
+    driver.switch_to.window(driver.window_handles[2])
+    
+    #Output S/N
+    serialNumberText=WebDriverWait(driver,10).until(EC.visibility_of_element_located((By.XPATH,"/html/body/div[4]/div[1]/div[2]/div[2]/div/div[2]/div/div/div[1]/div[2]/div")))
+    print("S/N: ")
+    print(serialNumberText.get_attribute('innerText'))
+    sn=(serialNumberText.get_attribute('innerText'))
+    
+    #Output TRA Warranty Expiration
+    traWarrantyText=WebDriverWait(driver,10).until(EC.visibility_of_element_located((By.XPATH,"/html/body/div[4]/div[1]/div[2]/div[2]/div/div[2]/div/div/div[5]/div[2]/div")))
+    print("TRA Warranty Expiration: ")
+    print(traWarrantyText.get_attribute('innerText'))
+    traWarrantyExp=(traWarrantyText.get_attribute('innerText'))
+    
+    #Output MFG Warranty Expiration
+    mfgWarrantyText=WebDriverWait(driver,10).until(EC.visibility_of_element_located((By.XPATH,"/html/body/div[4]/div[1]/div[2]/div[2]/div/div[2]/div/div/div[6]/div[2]/div")))
+    print("MFG Warranty Expiration: ")
+    print(mfgWarrantyText.get_attribute('innerText'))
+    mfgWarrantyExp=(mfgWarrantyText.get_attribute('innerText'))
+    
+    
+    #Open Site Config
+    #siteConfigLink=WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,"/html/body/div[4]/div[3]/div[2]/div[1]/div[2]/div[1]/div[3]/div")))
+    #siteConfigLink.click()
+    
+    #Switch to site config tab
+    #driver.switch_to.window(driver.window_handles[1])
+    
+    
     #Find parts based on device name
     parts = getPickeableParts(deviceName)
     
@@ -111,7 +152,7 @@ def getTicketInfo(ticketNum): # opens new tab and searches for ticket and grabs 
     ticketURL = str(driver.current_url)
     ticketID = ticketURL.split('=')[-1]
     
-    ticketInfo=[ticketID, deviceName, parts, btnCats]
+    ticketInfo=[ticketID, deviceName, schoolName, sn, traWarrantyExp, mfgWarrantyExp, parts, btnCats]
     print(ticketInfo)
     resetWindows()
     return ticketInfo
@@ -256,8 +297,8 @@ def forwardTicket(ticketID, forwardInfo): #TODO forwards ticket to specific name
         "WarrantyClaim": "In warranty accidental damage"
         }
     
+    #TODO finish other forard options for verifications
     #"SubIssueType": "",
-    
     #"Secondary": "",
     #"QAResource": "",
     #"ReworkResource": "",

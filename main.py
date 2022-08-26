@@ -36,7 +36,7 @@ class MainWindow(QMainWindow):
         # APP NAME
         # ///////////////////////////////////////////////////////////////
         title = "AT Assistant"
-        description = "Making ticket completion easier to make your job easier"
+        description = "Automating the boring stuff"
         # APPLY TEXTS
         self.setWindowTitle(title)
         widgets.titleRightInfo.setText(description)
@@ -98,8 +98,6 @@ class MainWindow(QMainWindow):
         widgets.comboBox_warranty_pick.addItems(warrantyDrops)
         
         
-        
-        
         # SHOW APP
         # ///////////////////////////////////////////////////////////////
         self.show()
@@ -127,19 +125,22 @@ class MainWindow(QMainWindow):
     # Post here your functions for clicked buttons
     # ///////////////////////////////////////////////////////////////
     def buttonClick(self):
-        #T20220602.0687
         
         #btn execution functions
         def ticketSearchPick(self):
             searchEntry = widgets.entry_ticketnum_pick.text()
             print("Searching for ticket: " + searchEntry)
-            #ticketInfo=[ticketID, deviceName, parts, btnCats]
+            #ticketInfo=[ticketID, deviceName, schoolName, sn, traWarrantyExp, mfgWarrantyExp, parts, btnCats]
             info = chromeActions.getTicketInfo(searchEntry)
             self.ticketNum = searchEntry
             self.ticketID = info[0]
             self.deviceName = info[1]
-            self.parts = info[2]
-            self.btnCats = info[3]
+            self.school = info[2]
+            self.sn = info[3]
+            self.traExp = info[4]
+            self.mfgExp = info[5]
+            self.parts = info[6]
+            self.btnCats = info[7]
             showPickeableParts(self)
         
         def ticketSearchVerify(self):
@@ -155,6 +156,9 @@ class MainWindow(QMainWindow):
         def showTicketInfoPick(self):
             widgets.table_ticketinfo_pick.setItem( 0 , 0 , QTableWidgetItem(self.ticketNum)) # Ticket Number
             widgets.table_ticketinfo_pick.setItem( 0 , 1 , QTableWidgetItem(self.deviceName)) # Device Type
+            widgets.table_ticketinfo_pick.setItem( 0 , 2 , QTableWidgetItem(self.mfgExp)) # MFG Exp
+            widgets.table_ticketinfo_pick.setItem( 0 , 3 , QTableWidgetItem(self.traExp)) # TRA Exp
+            widgets.table_ticketinfo_pick.setItem( 0 , 4 , QTableWidgetItem(self.school)) # School
         
         def showPickeableParts(self):   
             self.checkBoxes = []

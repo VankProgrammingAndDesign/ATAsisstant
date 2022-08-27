@@ -3,7 +3,7 @@ import os
 from cx_Freeze import setup, Executable
 
 # ADD FILES
-files = ['icon.ico','themes/']
+files = ['icon.ico','themes/','images/','json/','modules/','logins.py',]
 
 # TARGET
 target = Executable(
@@ -14,10 +14,10 @@ target = Executable(
 
 # SETUP CX FREEZE
 setup(
-    name = "PyDracula",
+    name = "AutotaskAssistant",
     version = "1.0",
-    description = "Modern GUI for Python applications",
-    author = "Wanderson M. Pimenta",
+    description = "Automated support for repair technicians",
+    author = "Vank Programming and Design",
     options = {'build_exe' : {'include_files' : files}},
     executables = [target]
     

@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.service import Service
 import json
 
 import logins
-from . import twofa
+from twofa import *
 import time
 
 from selenium.webdriver.common.by import By
@@ -45,9 +45,8 @@ def login(): # TODO LOGIN TO AT
     confirmPass = driver.find_element(By.XPATH,"/html/body/div[1]/div/div[1]/div[3]/div[2]/div[1]/div[4]/div").click()
 
         #2fa login
-    generateCode= twofa
     twofaCodeBox=WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,"/html/body/div[1]/div/div[1]/div[3]/div[5]/div[1]/div[2]/input")))
-    recentCode = generateCode.getNewCode()
+    recentCode = getNewCode()
     entryBox = driver.find_element(By.XPATH,"/html/body/div[1]/div/div[1]/div[3]/div[5]/div[1]/div[2]/input").send_keys(recentCode)
     confirmCode = driver.find_element(By.XPATH,"/html/body/div[1]/div/div[1]/div[3]/div[5]/div[1]/div[4]/div").click()
     

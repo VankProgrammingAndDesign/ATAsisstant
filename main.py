@@ -1,13 +1,11 @@
 from msilib.schema import CheckBox
 import sys
 import os
-import platform
 
 # IMPORT / GUI AND MODULES AND WIDGETS
 # ///////////////////////////////////////////////////////////////
 from modules import *
-from modules import chromeActions
-
+from chromeActions import *
 from widgets import *
 os.environ["QT_FONT_DPI"] = "96" # FIX Problem for High DPI and Scale above 100%
 
@@ -50,7 +48,7 @@ class MainWindow(QMainWindow):
         UIFunctions.uiDefinitions(self)
         
         # LOGIN
-        chromeActions.login()
+        login()
         
         # QTableWidget PARAMETERS
         # ///////////////////////////////////////////////////////////////
@@ -131,7 +129,7 @@ class MainWindow(QMainWindow):
             searchEntry = widgets.entry_ticketnum_pick.text()
             print("Searching for ticket: " + searchEntry)
             #ticketInfo=[ticketID, deviceName, schoolName, sn, traWarrantyExp, mfgWarrantyExp, parts, btnCats]
-            info = chromeActions.getTicketInfo(searchEntry)
+            info = getTicketInfo(searchEntry)
             self.ticketNum = searchEntry
             self.ticketID = info[0]
             self.deviceName = info[1]
@@ -147,7 +145,7 @@ class MainWindow(QMainWindow):
             searchEntry = widgets.entry_ticketnum_verify.text()
             print("Searching for ticket: " + searchEntry)
             #ticketInfo=[ticketID, deviceName, parts, btnCats]
-            info = chromeActions.getTicketInfo(searchEntry)
+            info = getTicketInfo(searchEntry)
             self.ticketID = info[0]
             self.deviceName = info[1]
             self.parts = info[2]
@@ -189,7 +187,7 @@ class MainWindow(QMainWindow):
         
         def pickParts(self):
             checkForPartsToPick(self)
-            chromeActions.pickParts(self.ticketID,self.partsToPick)
+            pickParts(self.ticketID,self.partsToPick)
             
         def forward(self):
             forward_info= dict()
@@ -210,7 +208,7 @@ class MainWindow(QMainWindow):
                 currentSelection=widgets.comboBox_warranty_pick.currentText()
                 forward_info.update({"WarrantyClaim":currentSelection})
             
-            chromeActions.forwardTicket(self.ticketID,forward_info)
+            forwardTicket(self.ticketID,forward_info)
 
         # GET BUTTON CLICKED
         btn = self.sender()

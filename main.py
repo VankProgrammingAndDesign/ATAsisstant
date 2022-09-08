@@ -185,7 +185,7 @@ class MainWindow(QMainWindow):
             print(self.partsToPick)
         
         
-        def pickParts(self):
+        def pickPartsExecute(self):
             checkForPartsToPick(self)
             pickParts(self.ticketID,self.partsToPick)
             
@@ -240,7 +240,7 @@ class MainWindow(QMainWindow):
             ticketSearchVerify(self)
 
         if btnName == "btn_pickParts":
-            pickParts(self)
+            pickPartsExecute(self)
             
         if btnName =="btn_forward_pick":
             forward(self)

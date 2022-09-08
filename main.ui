@@ -744,75 +744,6 @@ Button */
              <property name="bottomMargin">
               <number>0</number>
              </property>
-             <item>
-              <widget class="QFrame" name="toggleBox">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>45</height>
-                </size>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::NoFrame</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QVBoxLayout" name="verticalLayout_4">
-                <property name="spacing">
-                 <number>0</number>
-                </property>
-                <property name="leftMargin">
-                 <number>0</number>
-                </property>
-                <property name="topMargin">
-                 <number>0</number>
-                </property>
-                <property name="rightMargin">
-                 <number>0</number>
-                </property>
-                <property name="bottomMargin">
-                 <number>0</number>
-                </property>
-                <item>
-                 <widget class="QPushButton" name="toggleButton">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>45</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <family>Segoe UI</family>
-                    <pointsize>10</pointsize>
-                    <italic>false</italic>
-                    <bold>false</bold>
-                   </font>
-                  </property>
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/icon_menu.png);</string>
-                  </property>
-                  <property name="text">
-                   <string>Hide</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
              <item alignment="Qt::AlignTop">
               <widget class="QFrame" name="topMenu">
                <property name="frameShape">
@@ -945,78 +876,6 @@ Button */
                   </property>
                  </widget>
                 </item>
-                <item>
-                 <widget class="QPushButton" name="btn_save">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>45</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <family>Segoe UI</family>
-                    <pointsize>10</pointsize>
-                    <italic>false</italic>
-                    <bold>false</bold>
-                   </font>
-                  </property>
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-save.png)</string>
-                  </property>
-                  <property name="text">
-                   <string>Save</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="btn_exit">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>45</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <family>Segoe UI</family>
-                    <pointsize>10</pointsize>
-                    <italic>false</italic>
-                    <bold>false</bold>
-                   </font>
-                  </property>
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-x.png);</string>
-                  </property>
-                  <property name="text">
-                   <string>Exit</string>
-                  </property>
-                 </widget>
-                </item>
                </layout>
               </widget>
              </item>
@@ -1044,45 +903,6 @@ Button */
                 <property name="bottomMargin">
                  <number>0</number>
                 </property>
-                <item>
-                 <widget class="QPushButton" name="toggleLeftBox">
-                  <property name="enabled">
-                   <bool>true</bool>
-                  </property>
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>45</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <family>Segoe UI</family>
-                    <pointsize>10</pointsize>
-                    <italic>false</italic>
-                    <bold>false</bold>
-                   </font>
-                  </property>
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/icon_settings.png);</string>
-                  </property>
-                  <property name="text">
-                   <string>Left Box</string>
-                  </property>
-                 </widget>
-                </item>
                </layout>
               </widget>
              </item>
@@ -1828,14 +1648,296 @@ hr { height: 1px; border-width: 0; }
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="currentIndex">
-                      <number>1</number>
+                      <number>0</number>
                      </property>
                      <widget class="QWidget" name="home">
                       <property name="styleSheet">
-                       <string notr="true">background-image: url(:/images/images/images/PyDracula_vertical.png);
-background-position: center;
-background-repeat: no-repeat;</string>
+                       <string notr="true"/>
                       </property>
+                      <widget class="QFrame" name="frame_5">
+                       <property name="geometry">
+                        <rect>
+                         <x>0</x>
+                         <y>0</y>
+                         <width>1171</width>
+                         <height>671</height>
+                        </rect>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <widget class="QFrame" name="verifyrow_4">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>1158</width>
+                          <height>112</height>
+                         </rect>
+                        </property>
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_13">
+                         <property name="spacing">
+                          <number>0</number>
+                         </property>
+                         <property name="leftMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>0</number>
+                         </property>
+                         <item>
+                          <widget class="QFrame" name="frame_div_content_4">
+                           <property name="minimumSize">
+                            <size>
+                             <width>0</width>
+                             <height>110</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>16777215</width>
+                             <height>110</height>
+                            </size>
+                           </property>
+                           <property name="frameShape">
+                            <enum>QFrame::NoFrame</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QVBoxLayout" name="verticalLayout_26">
+                            <property name="spacing">
+                             <number>0</number>
+                            </property>
+                            <property name="leftMargin">
+                             <number>0</number>
+                            </property>
+                            <property name="topMargin">
+                             <number>0</number>
+                            </property>
+                            <property name="rightMargin">
+                             <number>0</number>
+                            </property>
+                            <property name="bottomMargin">
+                             <number>0</number>
+                            </property>
+                            <item>
+                             <widget class="QFrame" name="frame_title_wid_4">
+                              <property name="maximumSize">
+                               <size>
+                                <width>16777215</width>
+                                <height>35</height>
+                               </size>
+                              </property>
+                              <property name="frameShape">
+                               <enum>QFrame::StyledPanel</enum>
+                              </property>
+                              <property name="frameShadow">
+                               <enum>QFrame::Raised</enum>
+                              </property>
+                              <layout class="QVBoxLayout" name="verticalLayout_27">
+                               <item>
+                                <widget class="QLabel" name="labelBoxBlenderInstalation_4">
+                                 <property name="font">
+                                  <font>
+                                   <family>Segoe UI</family>
+                                   <pointsize>10</pointsize>
+                                   <italic>false</italic>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true"/>
+                                 </property>
+                                 <property name="text">
+                                  <string>Part Picker</string>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QFrame" name="frame_content_wid_4">
+                              <property name="frameShape">
+                               <enum>QFrame::NoFrame</enum>
+                              </property>
+                              <property name="frameShadow">
+                               <enum>QFrame::Raised</enum>
+                              </property>
+                              <layout class="QHBoxLayout" name="horizontalLayout_14">
+                               <item>
+                                <layout class="QGridLayout" name="gridLayout_8">
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item row="1" column="0" colspan="2">
+                                  <widget class="QLabel" name="labelVersion_6">
+                                   <property name="styleSheet">
+                                    <string notr="true">color: rgb(113, 126, 149);</string>
+                                   </property>
+                                   <property name="lineWidth">
+                                    <number>1</number>
+                                   </property>
+                                   <property name="text">
+                                    <string>Enter ticket number(Example: T20220622.0001</string>
+                                   </property>
+                                   <property name="alignment">
+                                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item row="0" column="0">
+                                  <widget class="QLineEdit" name="entry_ticketnum_verify_3">
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>0</width>
+                                     <height>30</height>
+                                    </size>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">background-color: rgb(33, 37, 43);</string>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                   <property name="placeholderText">
+                                    <string>Type here</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item row="0" column="1">
+                                  <widget class="QPushButton" name="btn_ticketSearch_verify_3">
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>150</width>
+                                     <height>30</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>Segoe UI</family>
+                                     <pointsize>10</pointsize>
+                                     <italic>false</italic>
+                                     <bold>false</bold>
+                                    </font>
+                                   </property>
+                                   <property name="cursor">
+                                    <cursorShape>PointingHandCursor</cursorShape>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">background-color: rgb(52, 59, 72);</string>
+                                   </property>
+                                   <property name="text">
+                                    <string>Search</string>
+                                   </property>
+                                   <property name="icon">
+                                    <iconset resource="../Modern_GUI_PyDracula_PySide6_or_PyQt6-master/resources.qrc">
+                                     <normaloff>:/icons/images/icons/cil-magnifying-glass.png</normaloff>:/icons/images/icons/cil-magnifying-glass.png</iconset>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </item>
+                              </layout>
+                             </widget>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                       <widget class="QWidget" name="horizontalLayoutWidget_2">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>110</y>
+                          <width>1161</width>
+                          <height>561</height>
+                         </rect>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_16">
+                         <item>
+                          <widget class="QTableWidget" name="tableWidget_2">
+                           <row>
+                            <property name="text">
+                             <string>Ticket Number</string>
+                            </property>
+                           </row>
+                           <row>
+                            <property name="text">
+                             <string>Device Type</string>
+                            </property>
+                           </row>
+                           <row>
+                            <property name="text">
+                             <string>Serial Number</string>
+                            </property>
+                           </row>
+                           <row>
+                            <property name="text">
+                             <string>MFG Warranty</string>
+                            </property>
+                           </row>
+                           <row>
+                            <property name="text">
+                             <string>TRA Warranty</string>
+                            </property>
+                           </row>
+                           <row>
+                            <property name="text">
+                             <string>School</string>
+                            </property>
+                           </row>
+                           <row>
+                            <property name="text">
+                             <string>Login:</string>
+                            </property>
+                           </row>
+                           <row>
+                            <property name="text">
+                             <string>Password:</string>
+                            </property>
+                           </row>
+                           <row>
+                            <property name="text">
+                             <string>New Row</string>
+                            </property>
+                           </row>
+                           <row>
+                            <property name="text">
+                             <string>Warranty Info</string>
+                            </property>
+                           </row>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QTableWidget" name="tableWidget">
+                           <row>
+                            <property name="text">
+                             <string>Posts</string>
+                            </property>
+                           </row>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </widget>
                      </widget>
                      <widget class="QWidget" name="widgets">
                       <property name="styleSheet">
@@ -2060,7 +2162,7 @@ background-repeat: no-repeat;</string>
                               <x>0</x>
                               <y>10</y>
                               <width>1158</width>
-                              <height>173</height>
+                              <height>171</height>
                              </rect>
                             </property>
                             <property name="sizePolicy">
@@ -2111,16 +2213,6 @@ background-repeat: no-repeat;</string>
                               <string>Site Configuration</string>
                              </property>
                             </row>
-                            <column>
-                             <property name="text">
-                              <string/>
-                             </property>
-                            </column>
-                            <item row="0" column="0">
-                             <property name="text">
-                              <string>T20220622.0001</string>
-                             </property>
-                            </item>
                            </widget>
                           </widget>
                          </item>
@@ -2221,7 +2313,24 @@ background-repeat: no-repeat;</string>
                           </property>
                           <item>
                            <layout class="QGridLayout" name="gridLayout_3">
-                            <item row="2" column="0">
+                            <item row="3" column="0">
+                             <widget class="QPushButton" name="btn_pickParts">
+                              <property name="text">
+                               <string>Pick Parts</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="3" column="1">
+                             <widget class="QFrame" name="frame_3">
+                              <property name="frameShape">
+                               <enum>QFrame::StyledPanel</enum>
+                              </property>
+                              <property name="frameShadow">
+                               <enum>QFrame::Raised</enum>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="2" column="0" colspan="2">
                              <widget class="QTableWidget" name="table_pickeableParts">
                               <property name="sizePolicy">
                                <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
@@ -2232,21 +2341,6 @@ background-repeat: no-repeat;</string>
                               <attribute name="verticalHeaderVisible">
                                <bool>false</bool>
                               </attribute>
-                              <row>
-                               <property name="text">
-                                <string/>
-                               </property>
-                              </row>
-                              <row>
-                               <property name="text">
-                                <string/>
-                               </property>
-                              </row>
-                              <row>
-                               <property name="text">
-                                <string/>
-                               </property>
-                              </row>
                               <column>
                                <property name="text">
                                 <string>Select</string>
@@ -2262,47 +2356,6 @@ background-repeat: no-repeat;</string>
                                 <string>autoTaskEntry</string>
                                </property>
                               </column>
-                              <item row="0" column="0">
-                               <property name="text">
-                                <string/>
-                               </property>
-                               <property name="checkState">
-                                <enum>Unchecked</enum>
-                               </property>
-                              </item>
-                              <item row="0" column="1">
-                               <property name="text">
-                                <string>Motherboard</string>
-                               </property>
-                              </item>
-                              <item row="0" column="2">
-                               <property name="text">
-                                <string>Lenovo 300e Gen 2 Motherboard N4020 - 4/32 -Dual Cam</string>
-                               </property>
-                              </item>
-                              <item row="1" column="0">
-                               <property name="text">
-                                <string/>
-                               </property>
-                               <property name="checkState">
-                                <enum>Unchecked</enum>
-                               </property>
-                              </item>
-                              <item row="2" column="0">
-                               <property name="text">
-                                <string/>
-                               </property>
-                               <property name="checkState">
-                                <enum>Unchecked</enum>
-                               </property>
-                              </item>
-                             </widget>
-                            </item>
-                            <item row="3" column="0">
-                             <widget class="QPushButton" name="btn_pickParts">
-                              <property name="text">
-                               <string>Pick Parts</string>
-                              </property>
                              </widget>
                             </item>
                            </layout>

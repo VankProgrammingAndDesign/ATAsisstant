@@ -62,6 +62,31 @@ def openTicketURL(ticketID):
     driver.switch_to.new_window('tab')
     driver.get(ticketURL)
 
+#todo get all messages/posts from ticket
+#Message for XPATH
+#/html/body/div[4]/div[2]/div[3]/div[1]/div/div[1]/div[8]/div/div[1]/div[2]/div[3]/div/span
+#/html/body/div[4]/div[2]/div[3]/div[1]/div/div[1]/div[8]/div/div[3]/div[2]/div[2]/div/span
+
+#/html/body/div[4]/div[2]/div[3]/div[1]/div/div[1]/div[8]/div/div[1]/div[2]/div[3]/div/span/text()
+def getTicketActivities():
+    
+    #activities= driver.find_elements(By.CLASS_NAME, "Conversation Item")
+    WebDriverWait(driver,10).until(EC.visibility_of_element_located((By.XPATH,"/html/body/div[4]/div[2]/div[3]/div[1]/div/div[1]/div[8]/div/div[1]/div[2]/div[3]/div/span")))
+    posts = driver.find_elements(By.XPATH,"//*[@class='ConversationItem' or @class='ConversationItem Internal']")
+    #TODO process notes 
+    # - Remove "NOTE TIME ATTACHMENT EDIT"
+    # - Remove initials
+    # - Add Posted By:
+    # - Add Posted At:
+    # - Add internal header and remove from message
+    print("Test Activities:")
+    textBlock = []
+    for post in posts:
+        print("New Activity:")
+        print(post.text)
+        textBlock.append(post.text)
+    
+    
 
 def getTicketInfo(ticketNum): # opens new tab and searches for ticket and grabs info. Closes tab. 
     driver.switch_to.window(driver.window_handles[0])
@@ -96,6 +121,8 @@ def getTicketInfo(ticketNum): # opens new tab and searches for ticket and grabs 
     print(school.get_attribute('innerText'))
     schoolName=(school.get_attribute('innerText'))
     
+    getTicketActivities()
+    
     #Open Asset Page
     #/html/body/div[4]/div[1]/div[2]/div[4]/div/div[2]/div/div/div[1]/div[2]/div/div/div/div
     assetLink=WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,"/html/body/div[4]/div[1]/div[2]/div[4]/div/div[2]/div/div/div[1]/div[2]/div/div/div/div")))
@@ -129,7 +156,6 @@ def getTicketInfo(ticketNum): # opens new tab and searches for ticket and grabs 
     
     #Switch to site config tab
     #driver.switch_to.window(driver.window_handles[1])
-    
     
     #Find parts based on device name
     parts = getPickeableParts(deviceName)

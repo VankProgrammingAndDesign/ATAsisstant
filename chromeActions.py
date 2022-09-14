@@ -115,6 +115,10 @@ def getTicketInfo(ticketNum): # opens new tab and searches for ticket and grabs 
     print(title.get_attribute('innerText'))
     deviceName=(title.get_attribute('innerText'))
 
+    #Output Current URL
+    ticketURL = str(driver.current_url)
+    ticketID = ticketURL.split('=')[-1]
+
     #Output School name
     school=WebDriverWait(driver,10).until(EC.visibility_of_element_located((By.XPATH,"/html/body/div[4]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div/div/div")))
     print("School: ")
@@ -128,7 +132,7 @@ def getTicketInfo(ticketNum): # opens new tab and searches for ticket and grabs 
     assetLink=WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,"/html/body/div[4]/div[1]/div[2]/div[4]/div/div[2]/div/div/div[1]/div[2]/div/div/div/div")))
     assetLink.click()
     
-    #Switch to ticket tab
+    #Switch to Asset tab
     driver.switch_to.window(driver.window_handles[2])
     
     #Output S/N
@@ -137,6 +141,8 @@ def getTicketInfo(ticketNum): # opens new tab and searches for ticket and grabs 
     print(serialNumberText.get_attribute('innerText'))
     sn=(serialNumberText.get_attribute('innerText'))
     
+    
+
     #Output TRA Warranty Expiration
     traWarrantyText=WebDriverWait(driver,10).until(EC.visibility_of_element_located((By.XPATH,"/html/body/div[4]/div[1]/div[2]/div[2]/div/div[2]/div/div/div[5]/div[2]/div")))
     print("TRA Warranty Expiration: ")
@@ -173,9 +179,7 @@ def getTicketInfo(ticketNum): # opens new tab and searches for ticket and grabs 
         else: 
             btnCats.append('MB')
 
-    #Output Current URL
-    ticketURL = str(driver.current_url)
-    ticketID = ticketURL.split('=')[-1]
+    
     
     ticketInfo=[ticketID, deviceName, schoolName, sn, traWarrantyExp, mfgWarrantyExp, parts, btnCats]
     print(ticketInfo)
@@ -193,8 +197,10 @@ def pickParts(ticketID,partsToPick): #TODO iterates through partsToPick and call
     resetWindows()
 
 def pickSinglePart(partNameAT, ticketID): #TODO opens new page and goes through pick parts process
-    
-    #Waits for title to load and opens new part charge
+    #https://ww5.autotask.net/Mvc/ServiceDesk/TicketDetail.mvc?workspace=False&ids%5B0%5D=610405&ticketId=610405
+    #https://ww5.autotask.net/Mvc/ServiceDesk/TicketDetail.mvc?workspace=False&ids%5B0%5D=30225887&ticketId=30225887
+
+    #Waits for ticket to load and opens new part charge
     #/html/body/div[3]/div[4] - new charge button
 
     newChargeButton=WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,"/html/body/div[3]/div[4]")))
@@ -263,6 +269,8 @@ def pickSinglePart(partNameAT, ticketID): #TODO opens new page and goes through 
         alert.accept()
     except:
         print("no price alert")
+
+    time.sleep(1)
 
     #Save and Close button
     #/html/body/form/div[1]/div/div[1]/table/tbody/tr/td/table/tbody/tr/td[1]/atbutton/span

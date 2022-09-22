@@ -4,7 +4,8 @@ from selenium.webdriver.chrome.service import Service
 
 import json
 
-import logins
+import keys
+
 from twofa import *
 import time
 
@@ -28,7 +29,7 @@ driver.set_window_size(1250,700)
 
 def login(): # TODO LOGIN TO AT
 
-    login = logins.getLogins()
+    login = keys.getLogins()
     userName = login[0]
     pw = login[1]
         #opens autotask login

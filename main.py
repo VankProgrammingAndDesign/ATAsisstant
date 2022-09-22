@@ -129,16 +129,16 @@ class MainWindow(QMainWindow):
             searchEntry = widgets.entry_ticketnum_pick.text()
             print("Searching for ticket: " + searchEntry)
             #ticketInfo=[ticketID, deviceName, schoolName, sn, traWarrantyExp, mfgWarrantyExp, parts, btnCats]
-            info = getTicketInfo(searchEntry)
-            self.ticketNum = searchEntry
-            self.ticketID = info[0]
-            self.deviceName = info[1]
-            self.school = info[2]
-            self.sn = info[3]
-            self.traExp = info[4]
-            self.mfgExp = info[5]
-            self.parts = info[6]
-            self.btnCats = info[7]
+            info = getTicketInfo(searchEntry)   
+            self.ticketNum = searchEntry        #ticketNum
+            self.ticketID = info[0]             #ticektID
+            self.deviceName = info[1]           #deviceName
+            self.school = info[2]               #schoolName
+            self.sn = info[3]                   #S/N
+            self.traExp = info[4]               #traWarrantyExp
+            self.mfgExp = info[5]               #mfgWarrantyExp
+            self.parts = info[6]                #parts
+            self.btnCats = info[7]              #btnCcats
             showPickeableParts(self)
         
         def ticketSearchVerify(self):
